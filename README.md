@@ -1,6 +1,6 @@
 Project description:
 4 pages:
-- Home (Minh)
+- Home (Em Vu)
 - About Us (Ha) 
 - Courses (Anh Vu)
-- News(update information about center, Date start courses, recruitment) (Em Vu)
+- News(update information about center, Date start courses, recruitment) (Minh Lee)
