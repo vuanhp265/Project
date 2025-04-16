@@ -2,7 +2,7 @@ import React from 'react';
 import '../Style/AboutUs.css'; // Import the advanced CSS
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGraduationCap, faChalkboardTeacher, faBookOpen, faUsers, faClock, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
-import instructorImage from '../image/su-menh-3.webp'; // Replace with your actual image path
+import instructorImage from '../images/su-menh-3.webp'; // Replace with your actual image path
 import Image from '../images/hoc-la-phai-dung-duoc.webp';
 import Image1 from '../images/su-menh-2.webp';
 import Image2 from '../images/su-menh-4.webp';
