@@ -4,6 +4,7 @@ import ClassDetail from './components/ClassDetail';
 import Level0Table from './components/Level0Table';
 import Level1Table from './components/Level1Table';
 import ClassDetailone from './components/ClassDetailone';
+import AboutUs from './components/AboutUs';
 
 import './App.css';
 
@@ -25,6 +26,17 @@ function App() {
             </ul>
           </div>
         </nav>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About Us</Link>
+            </li>
+            {/* Add other navigation links */}
+          </ul>
+        </nav>
 
         <div className="container mt-4">
           <Routes>
@@ -36,7 +48,12 @@ function App() {
           <Routes>
             <Route path="/" element={<Level1Table />} />
             <Route path="/class1/:id" element={<ClassDetailone/>} />
-          </Routes>  
+          </Routes>
+          <Routes>
+          <Route path="/about" element={<AboutUs />} />
+          {/* Add other routes */}
+          <Route path="/" element={<div>Home Page Content</div>} />
+        </Routes>  
         </div>
       </div>
     </Router>
