@@ -4,6 +4,7 @@ import ClassDetail from './components/ClassDetail';
 import Level0Table from './components/Level0Table';
 import Level1Table from './components/Level1Table';
 import ClassDetailone from './components/ClassDetailone';
+import Coursetable from './components/Coursetable';
 
 import './App.css';
 
