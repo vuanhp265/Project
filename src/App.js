@@ -6,8 +6,7 @@ import ClassDetailone from './components/ClassDetailone';
 import Level0Table from './components/Level0Table';
 import Level1Table from './components/Level1Table';
 import CourseTable from './components/Coursetable';
-import AboutUs from './components/AboutUs'; // 👉 Bạn cần tạo thêm component này
-
+import AboutUs from './components/AboutUs'; 
 import './App.css';
 
 function App() {
