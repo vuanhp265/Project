@@ -1,5 +1,5 @@
 import React from 'react';
-import '../style/AboutUs.css'; // Import the advanced CSS
+import '../style/AboutUs.css'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGraduationCap, faChalkboardTeacher, faBookOpen, faUsers, faClock, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import instructorImage from '../images/su-menh-3.webp'; // Replace with your actual image path

@@ -1,43 +1,25 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import ClassDetail from './components/ClassDetail';
 import ClassDetailone from './components/ClassDetailone';
 import Level0Table from './components/Level0Table';
 import Level1Table from './components/Level1Table';
 import CourseTable from './components/Coursetable';
-import AboutUs from './components/AboutUs'; 
+import AboutUs from './components/AboutUs';
+import Header from './components/HeadnFooter/Header';
+import Footer from './components/HeadnFooter/Footer';
 import './App.css';
 
 function App() {
   return (
     <Router>
       <div className="App">
-        {/* Navbar */}
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-          <div className="container">
-            <Link className="navbar-brand" to="/">Lịch Khai Giảng</Link>
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarNav">
-              <ul className="navbar-nav me-auto">
-                <li className="nav-item">
-                  <Link className="nav-link" to="/">Tất cả các lớp</Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/courses">Courses</Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/about">About Us</Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+        {/* Header */}
+        <Header />
 
         {/* Main Content */}
-        <div className="container mt-4">
+        <div className="container mt-4 mb-5">
           <Routes>
             <Route path="/" element={
               <>
@@ -51,6 +33,9 @@ function App() {
             <Route path="/about" element={<AboutUs />} />
           </Routes>
         </div>
+
+        {/* Footer */}
+        <Footer />
       </div>
     </Router>
   );
