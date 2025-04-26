@@ -1,9 +1,9 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import dataone from '../data/level1.json'; // Đường dẫn import dữ liệu của level1.json
-function ClassDetailone() {
+import data from '../../data/level0.json'; // Đường dẫn import dữ liệu của level0.json
+function ClassDetail() {
   const { id } = useParams();
-  const classInfo = dataone.find((item) => item.id === parseInt(id));
+  const classInfo = data.find((item) => item.id === parseInt(id));
   if (!classInfo) {
     return <div className="container mt-4"><h2>Không tìm thấy thông tin lớp học.</h2></div>;
   }
@@ -40,4 +40,4 @@ function ClassDetailone() {
   );
 }
 
-export default ClassDetailone;
+export default ClassDetail;
