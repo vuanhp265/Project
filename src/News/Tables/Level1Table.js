@@ -40,28 +40,28 @@ function Level1Table() {
           </tr>
         </thead>
         <tbody>
-          {classSchedule.map((item) => (
-            <tr key={item.id}>
-              <td>{item.id}</td>
-              <td><Link to={`/class1/${item.id}`}>{item.className}</Link></td>
-              <td>{item.level}</td>
-              <td>{item.startDate}</td>
-              <td>{item.endDate}</td>
-              <td>{item.schedule}</td>
-              <td>{item.teacher}</td>
-              <td>
-                <span className={`badge ${getStatusBadgeClass(item.status)}`}>
-                  {item.status}
-                </span>
-              </td>
-              <td>
-                <Link to={`/class1/${item.id}`} className="btn btn-sm btn-info">
-                  See Details
-                </Link>
-              </td>
-            </tr>
-          ))}
-        </tbody>
+                  {classSchedule.map((item) => (
+                    <tr key={item.id}>
+                      <td>{item.id}</td>
+                      <td><Link to={`/class/${item.id}`}>{item.className}</Link></td>
+                      <td>{item.level}</td>
+                      <td>{item.startDate}</td>
+                      <td>{item.endDate}</td>
+                      <td>{item.schedule}</td>
+                      <td>{item.teacher}</td>
+                      <td>
+                        <span style={{color:"FFFF"}}>
+                          {item.status}
+                        </span>
+                      </td>
+                      <td>
+                        <Link to={`/class/${item.id}`} className="btn btn-sm btn-info">
+                          See Details
+                        </Link>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
       </table>
     </div>
   );
