@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Home() {
+function Information() {
   return (
     <div className="Information">
       {/* Header */}
@@ -99,4 +99,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Information;

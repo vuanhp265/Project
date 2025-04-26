@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import orders from "../data/courselist.json";
 import { Modal, Button, Form } from 'react-bootstrap';
 
@@ -6,7 +6,6 @@ function CourseTable() {
   const [showModal, setShowModal] = useState(false);
   const [selectedCourse, setSelectedCourse] = useState(null);
   const [selectedLevel, setSelectedLevel] = useState("All");
-  const [darkMode, setDarkMode] = useState(false);
 
   const levels = ["All", ...new Set(orders.map(course => course.name))];
 
@@ -20,14 +19,6 @@ function CourseTable() {
     setSelectedCourse(null);
   };
 
-  const handleToggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
-
-  useEffect(() => {
-    document.body.classList.toggle('dark-mode', darkMode);
-  }, [darkMode]);
-
   const filteredCourses =
     selectedLevel === "All"
       ? orders
@@ -36,14 +27,7 @@ function CourseTable() {
   return (
     <div className="container course-list-container my-5">
       <div className="d-flex justify-content-between align-items-center mb-4">
-        <h2 className="section-title">Our IELTS Courses</h2>
-        <Form.Check 
-          type="switch"
-          id="dark-mode-switch"
-          label="Dark Mode"
-          checked={darkMode}
-          onChange={handleToggleDarkMode}
-        />
+        <h2 className="section-title">Our Courses</h2>
       </div>
 
       <div className="mb-4 d-flex justify-content-center">
@@ -66,10 +50,10 @@ function CourseTable() {
             <div className="course-item card h-100 shadow-sm">
               <div className="card-body course-item-body">
                 <h3 className="course-item-title card-title">{item.name}</h3>
-                <p className="course-item-description card-text">{item.description}</p>
+                <p className="course-item-description card-text">{item.description || item.objective}</p>
                 <div className="course-item-info">
                   <span className="course-level-label">Level:</span>
-                  <strong className="course-level">{item.level}</strong>
+                  <strong className="course-level">{item.level || 'N/A'}</strong>
                 </div>
               </div>
               <div className="course-item-footer card-footer bg-white border-top-0">
@@ -91,8 +75,17 @@ function CourseTable() {
           <Modal.Title>{selectedCourse?.name}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <p>{selectedCourse?.description}</p>
-          <p><strong>Level:</strong> {selectedCourse?.level}</p>
+          <p>{selectedCourse?.description || selectedCourse?.objective}</p>
+          <p><strong>Target:</strong> {selectedCourse?.target}</p>
+          <p><strong>Duration:</strong> {selectedCourse?.duration}</p>
+          {selectedCourse?.special_features && (
+            <ul>
+              <strong>Special Features:</strong>
+              {selectedCourse.special_features.map((feature, index) => (
+                <li key={index}>{feature}</li>
+              ))}
+            </ul>
+          )}
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleCloseModal}>Close</Button>

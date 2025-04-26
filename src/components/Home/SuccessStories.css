@@ -1,0 +1,10 @@
+/* src/components/Home/SuccessStories.css */
+.success-stories h2 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
