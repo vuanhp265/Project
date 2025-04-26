@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import data from '../../data/level0.json'; // Đường dẫn import dữ liệu
-import '../App.css';
 
 function Level0Table() {
   const [classSchedule, setClassSchedule] = useState([]);

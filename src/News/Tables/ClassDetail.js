@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import data from '../data/level0.json'; // Đường dẫn import dữ liệu của level0.json
+import data from '../../data/level0.json'; // Đường dẫn import dữ liệu của level0.json
 function ClassDetail() {
   const { id } = useParams();
   const classInfo = data.find((item) => item.id === parseInt(id));
