@@ -15,6 +15,7 @@ import Footer from './components/HeadnFooter/Footer';
 import MainRoutes from './Routes/MainRoutes';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Information from './News/recruitment/information';
 
 
 function Appone() {
@@ -42,6 +43,7 @@ function Appone() {
             <Route path="/class1/:id" element={<ClassDetailone />} />
             <Route path="/courses" element={<CourseTable />} />
             <Route path="/about" element={<AboutUs />} />
+            <Route path="/information" element={<Information />} />
           </Routes>
         </div>
 

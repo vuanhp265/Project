@@ -19,7 +19,7 @@ const Introduction = () => {
           </Col>
           <Col md={6}>
             <img
-              src="https://via.placeholder.com/500x300"
+              src="../../images/student_learning.jpeg"
               alt="Students learning"
               className="img-fluid rounded"
             />

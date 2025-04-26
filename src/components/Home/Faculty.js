@@ -8,7 +8,7 @@ const Faculty = () => {
     {
       name: 'John Doe',
       title: 'IELTS Expert',
-      image: 'https://via.placeholder.com/150',
+      image: '../../images/student_learning.jpeg',
     },
     {
       name: 'Jane Smith',

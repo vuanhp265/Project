@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaPhone, FaFacebookF, FaYoutube, FaUser, FaSearch } from 'react-icons/fa';
-import logo from './ielts_logo.png'; 
+import logo from './ielts_logo.png';
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,9 +37,9 @@ function Header() {
           </Link>
 
           {/* Mobile Menu Button */}
-          <button 
-            className="navbar-toggler" 
-            type="button" 
+          <button
+            className="navbar-toggler"
+            type="button"
             onClick={toggleMenu}
             aria-label="Toggle navigation"
           >
@@ -52,28 +52,14 @@ function Header() {
               <li className="nav-item">
                 <Link className="nav-link" to="/">Home</Link>
               </li>
-              <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="#">
-                  IELTS Courses
-                </a>
-                <div className="dropdown-menu">
-                  <Link className="dropdown-item" to="/ielts-foundation">IELTS Foundation</Link>
-                  <Link className="dropdown-item" to="/ielts-intermediate">IELTS Intermediate</Link>
-                  <Link className="dropdown-item" to="/ielts-advanced">IELTS Advanced</Link>
-                  <Link className="dropdown-item" to="/ielts-crash-course">IELTS Crash Course</Link>
-                </div>
+              <li className="nav-item">
+                <Link className="nav-link" to="/courses">Courses</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/ielts-mock-test">Ielts Mock Test</Link>
+                <Link className="nav-link" to="/information">Information</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/ielts-materials">IELTS Materials</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/ielts-blog">News</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/about-us">About Us</Link>
+                <Link className="nav-link" to="/about">About Us</Link>
               </li>
             </ul>
 
@@ -81,9 +67,9 @@ function Header() {
             <div className="d-flex align-items-center">
               <div className="search-box me-3">
                 <FaSearch className="search-icon" />
-                <input 
-                  type="text" 
-                  placeholder="Search..." 
+                <input
+                  type="text"
+                  placeholder="Search..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                 />
