@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "className": "Basic English Communication",
+        "level": "A1",
+        "startDate": "2025-05-10",
+        "endDate": "2025-07-20",
+        "schedule": "Monday, Wednesday, Friday (18:00 - 19:30)",
+        "teacher": "Nguyen Van A",
+        "status": "Open"
+    },
+    {
+        "id": 2,
+        "className": "Advanced English Communication",
+        "level": "B1",
+        "startDate": "2025-05-15",
+        "endDate": "2025-08-15",
+        "schedule": "Tueday, Thursday, Saturday (20:00 - 21:30)",
+        "teacher": "Tran Thi B",
+        "status": "Coming Soon"
+    },
+    {
+        "id": 3,
+        "className": "IELTS 6.5+ Training",
+        "level": "IELTS",
+        "startDate": "2025-06-01",
+        "endDate": "2025-09-30",
+        "schedule": "Saturday, Sunday (09:00 - 11:00)",
+        "teacher": "Le Hoang C",
+        "status": "Full"
+    },
+    {
+        "id": 4,
+        "className": "English for Children",
+        "level": "Kids",
+        "startDate": "2025-05-20",
+        "endDate": "2025-07-30",
+        "schedule": "Monday, Wednesday (16:00 - 17:00)",
+        "teacher": "Pham Thu D",
+        "status": "Open"
+    }
+]

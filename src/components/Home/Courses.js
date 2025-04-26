@@ -1,7 +1,7 @@
 // src/components/Courses.js
 import React, { useState, useEffect } from 'react';
 
-function Courses() {
+function Home() {
   const [courses, setCourses] = useState([]);
   const [selectedSubject, setSelectedSubject] = useState('all');
   const [subjects, setSubjects] = useState([]);
@@ -70,4 +70,4 @@ function Courses() {
   );
 }
 
-export default Courses;
+export default Home;

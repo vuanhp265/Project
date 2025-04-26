@@ -4,10 +4,10 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './News/recruitment/information';
 import Recruitment from './News/recruitment/information details';
 import Register from './News/recruitment/Register';
-import ClassDetail from './components/ClassDetail';
-import ClassDetailone from './components/ClassDetailone';
-import Level0Table from './components/Level0Table';
-import Level1Table from './components/Level1Table';
+import ClassDetail from '../src/News/Tables/ClassDetail';
+import ClassDetailone from '../src/News/Tables/ClassDetailone';
+import Level0Table from '../src/News/Tables/Level0Table';
+import Level1Table from '../src/News/Tables/Level1Table';
 import CourseTable from './components/Coursetable';
 import AboutUs from './components/AboutUs';
 import Header from './components/HeadnFooter/Header';
@@ -15,6 +15,7 @@ import Footer from './components/HeadnFooter/Footer';
 import MainRoutes from './Routes/MainRoutes';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Information from './News/recruitment/information';
 
 
 function Appone() {
@@ -42,6 +43,7 @@ function Appone() {
             <Route path="/class1/:id" element={<ClassDetailone />} />
             <Route path="/courses" element={<CourseTable />} />
             <Route path="/about" element={<AboutUs />} />
+            <Route path="/information" element={<Information />} />
           </Routes>
         </div>
 
