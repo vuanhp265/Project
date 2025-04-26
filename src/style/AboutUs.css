@@ -1,0 +1,358 @@
+/* AboutUsAdvanced.css */
+
+.about-us-advanced-container {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.7;
+    color: #444;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  /* Hero Section */
+  .hero-advanced-section {
+    background-color: #f9f9f9;
+    padding: 80px 20px;
+    text-align: left;
+  }
+  
+  .hero-advanced-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .hero-advanced-text {
+    flex: 1;
+    padding-right: 40px;
+  }
+  
+  .hero-advanced-text h1 {
+    font-size: 3.5em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    line-height: 1.2;
+  }
+  
+  .hero-advanced-text .subtitle {
+    font-size: 1.2em;
+    color: #777;
+    margin-bottom: 30px;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .cta-buttons button {
+    padding: 15px 30px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-buttons .primary-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+  }
+  
+  .cta-buttons .primary-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .cta-buttons .secondary-button {
+    background-color: transparent;
+    color: #007bff;
+    border: 2px solid #007bff;
+  }
+  
+  .cta-buttons .secondary-button:hover {
+    background-color: #e7f2ff;
+  }
+  
+  .hero-advanced-image {
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  .hero-advanced-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Why Choose Us Section */
+  .why-choose-advanced-section {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .why-choose-advanced-section h2 {
+    font-size: 2.8em;
+    color: #2c3e50;
+    margin-bottom: 40px;
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .feature-card {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    text-align: center;
+  }
+  
+  .feature-icon {
+    font-size: 2.5em;
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+  
+  .feature-card h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .feature-card p {
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  /* Our Approach Section */
+  .our-approach-section {
+    background-color: #eef7ff;
+    padding: 120px 20px 80px; /* Điều chỉnh padding để "cao hơn" và căn giữa ngang */
+    text-align: center; /* Căn giữa ngang cho tiêu đề */
+  }
+  
+  .our-approach-section h2 {
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 100px;
+  }
+  
+  .approach-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left; /* Đặt lại text-align cho nội dung */
+  }
+  
+  .approach-text {
+    flex: 1;
+    padding-right: 40px;
+  }
+  
+  .approach-text h3 {
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .approach-text p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 25px;
+  }
+  
+  .approach-image {
+    flex: 1;
+    max-width: 450px;
+  }
+  
+  .approach-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Our Team Section */
+  .our-team-section {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .our-team-section h2 {
+    font-size: 2.8em;
+    color: #2c3e50;
+    margin-bottom: 40px;
+  }
+  
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .team-member {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    text-align: center;
+  }
+  
+  .team-member-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  .team-member h3 {
+    font-size: 1.3em;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .team-member-title {
+    color: #777;
+    font-size: 0.9em;
+  }
+  
+  /* Call to Action Section */
+  .cta-advanced-section {
+    background-color: #007bff;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .cta-advanced-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .cta-advanced-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .cta-advanced-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  .cta-advanced-content .primary-button {
+    background-color: white;
+    color: #007bff;
+    border: none;
+    padding: 15px 35px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .cta-advanced-content .primary-button:hover {
+    background-color: #e0f7ff;
+    color: #0056b3;
+  }
+  
+  /* Footer */
+  .advanced-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.9em;
+  }
+  
+  .advanced-footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  .advanced-footer a {
+    color: #ddd;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .advanced-footer a:hover {
+    color: #fff;
+  }
+  
+  .advanced-footer .social-links a {
+    font-size: 1.2em;
+    margin: 0 15px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .hero-advanced-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-advanced-text {
+      padding-right: 0;
+      margin-bottom: 40px;
+    }
+  
+    .hero-advanced-text h1 {
+      font-size: 2.8em;
+    }
+  
+    .hero-advanced-image {
+      max-width: 100%;
+    }
+  
+    .approach-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .approach-text {
+      padding-right: 0;
+      margin-bottom: 40px;
+    }
+  
+    .approach-image {
+      max-width: 100%;
+    }
+  
+    .features-grid,
+    .team-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .cta-advanced-content h2 {
+      font-size: 2em;
+    }
+  
+    .advanced-footer .footer-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .advanced-footer .social-links {
+      margin-top: 10px;
+    }
+  }
