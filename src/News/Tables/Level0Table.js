@@ -9,18 +9,18 @@ function Level0Table() {
     setClassSchedule(data);
   }, []);
 
-  const getStatusBadgeClass = (status) => {
-    switch (status.toLowerCase()) {
-      case 'open':
-        return 'badge-success';
-      case 'school is about to start':
-        return 'badge-warning';
-      case 'is full':
-        return 'badge-danger';
-      default:
-        return 'badge-secondary';
-    }
-  };
+  // const getStatusBadgeClass = (status) => {
+  //   switch (status.toLowerCase()) {
+  //     case 'open':
+  //       return 'badge-success';
+  //     case 'school is about to start':
+  //       return 'badge-warning';
+  //     case 'is full':
+  //       return 'badge-danger';
+  //     default:
+  //       return 'badge-secondary';
+  //   }
+  // };
 
   return (
     <div className="container mt-4">
@@ -50,7 +50,7 @@ function Level0Table() {
               <td>{item.schedule}</td>
               <td>{item.teacher}</td>
               <td>
-                <span className={`badge ${getStatusBadgeClass(item.status)}`}>
+                <span style={{color:"FFFF"}}>
                   {item.status}
                 </span>
               </td>
