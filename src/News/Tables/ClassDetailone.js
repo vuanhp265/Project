@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import dataone from '../data/level1.json'; // Đường dẫn import dữ liệu của level1.json
+import dataone from '../../data/level1.json'; // Đường dẫn import dữ liệu của level1.json
 function ClassDetailone() {
   const { id } = useParams();
   const classInfo = dataone.find((item) => item.id === parseInt(id));
