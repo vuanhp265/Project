@@ -12,7 +12,9 @@ import CourseTable from './components/Coursetable';
 import AboutUs from './components/AboutUs';
 import Header from './components/HeadnFooter/Header';
 import Footer from './components/HeadnFooter/Footer';
+import MainRoutes from './Routes/MainRoutes';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function Appone() {
@@ -22,8 +24,8 @@ function Appone() {
 
         {/* Header */}
         <Header />
-
-        {/* Main Content */}
+          <MainRoutes />
+          {/* Main Content */}
         <div className="container mt-4 mb-5">
          
           <Routes>

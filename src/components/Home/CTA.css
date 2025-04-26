@@ -1,0 +1,14 @@
+/* src/components/Home/CTA.css */
+.cta {
+    background: linear-gradient(to right, #007bff, #0056b3);
+  }
+  
+  .cta h2 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .cta p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }

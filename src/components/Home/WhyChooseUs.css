@@ -1,0 +1,19 @@
+/* src/components/Home/WhyChooseUs.css */
+.why-choose-us {
+    background-color: #f8f9fa;
+  }
+  
+  .why-choose-us h2 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s;
+  }
