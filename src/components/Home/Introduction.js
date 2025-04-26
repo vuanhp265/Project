@@ -2,6 +2,7 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import './Introduction.css';
+import studentlearning from './studentlearning.jpg';
 
 const Introduction = () => {
   return (
@@ -19,7 +20,7 @@ const Introduction = () => {
           </Col>
           <Col md={6}>
             <img
-              src="https://via.placeholder.com/500x300"
+              src="studentlearning"
               alt="Students learning"
               className="img-fluid rounded"
             />

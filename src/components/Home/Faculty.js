@@ -18,7 +18,7 @@ const Faculty = () => {
     {
       name: 'Emily Brown',
       title: 'Career Mentor',
-      image: 'https://via.placeholder.com/150',
+      image: '',
     },
   ];
 
