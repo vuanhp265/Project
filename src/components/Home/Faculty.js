@@ -2,23 +2,25 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import './Faculty.css';
-
+import john_doe from '../../assets/images/john_doe.jpg'; 
+import jane_smith from '../../assets/images/jane_smith.webp';
+import emily_brown from '../../assets/images/emily_brown.webp';
 const Faculty = () => {
   const teachers = [
     {
       name: 'John Doe',
       title: 'IELTS Expert',
-      image: '../../images/student_learning.jpeg',
+      image: john_doe, // Use the imported image
     },
     {
       name: 'Jane Smith',
       title: 'Language Coach',
-      image: 'https://via.placeholder.com/150',
+      image: jane_smith, // Placeholder (unchanged)
     },
     {
       name: 'Emily Brown',
       title: 'Career Mentor',
-      image: 'https://via.placeholder.com/150',
+      image: emily_brown, // Fallback placeholder
     },
   ];
 
@@ -32,10 +34,10 @@ const Faculty = () => {
               <Card className="h-100 text-center">
                 <Card.Img
                   variant="top"
-                  src={teacher.image}
+                  src={teacher.image || 'https://via.placeholder.com/150'} // Fallback for empty image
                   alt={teacher.name}
                   className="rounded-circle mx-auto mt-3"
-                  style={{ width: '100px', height: '100px' }}
+                  style={{ width: '100px', height: '100px', objectFit: 'cover' }} // Added objectFit for better image scaling
                 />
                 <Card.Body>
                   <Card.Title>{teacher.name}</Card.Title>

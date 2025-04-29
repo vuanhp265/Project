@@ -2,6 +2,7 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import './Introduction.css';
+import studentlearning from '../../assets/images/studentlearning.jpg'; // Đường dẫn đến ảnh
 
 const Introduction = () => {
   return (
@@ -19,7 +20,7 @@ const Introduction = () => {
           </Col>
           <Col md={6}>
             <img
-              src="../../images/student_learning.jpeg"
+              src={studentlearning} // Sử dụng biến đã import
               alt="Students learning"
               className="img-fluid rounded"
             />
