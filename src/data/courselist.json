@@ -1,0 +1,87 @@
+[
+    {
+      "id": 1,
+      "name": "Star - Pre-Foundation Course",
+      "target": "5th Grade Students",
+      "objective": "Getting Familiar with Basic Concepts. Building a Solid Foundation for Math and Science.",
+      "duration": "1 Year",
+      "special_features": [
+        "Practical Activities",
+        "Thinking Exercises",
+        "Inspiring a Love of Learning"
+      ],
+      "description": "📍 For beginners. Start from zero to build a solid foundation.",
+      "level": "0 - 2.0 IELTS | Skills: Basic Listening - Speaking"
+    },
+    {
+      "id": 2,
+      "name": "Star - Foundation Course for Class 6",
+      "target": "Grade 6 students",
+      "objective": "Solid knowledge of Math and Science. Develop logical and creative thinking.",
+      "duration": "1 year",
+      "special_features": [
+        "Interactive classroom",
+        "Regular exercises",
+        "Detailed progress reports for parents"
+      ],
+      "description": "📍 Strengthen basic vocabulary and grammar.",
+      "level": "< 3.5 IELTS | Skills: Reading, Basic Writing"
+    },
+    {
+      "id": 3,
+      "name": "Star - Foundation Course for Class 7",
+      "target": "Grade 7 students",
+      "objective": "Consolidate knowledge foundation. Prepare for semester exams and excellent student exams.",
+      "duration": "1 year",
+      "special_features": [
+        "In-depth lectures",
+        "Updated study materials",
+        "Monthly skill test"
+      ],
+      "description": "📍 Get familiar with the actual IELTS test format.",
+      "level": "3.5+ | Skills: Test Format + Basic Tips"
+    },
+    {
+      "id": 4,
+      "name": "Star - Foundation Course for Class 8",
+      "target": "Grade 8 students",
+      "objective": "Complete basic knowledge. Review orientation for grade 9 entrance exam.",
+      "duration": "1 year",
+      "special_features": [
+        "Continuous assessment tests",
+        "Guide to solving sample test questions",
+        "Support for study counseling"
+      ],
+      "description": "📍 Learn by skill 4 skills in depth.",
+      "level": "~5.0 IELTS | Skills: Listening - Speaking - Reading - Writing"
+    },
+    {
+      "id": 5,
+      "name": "Star - Target Course for Class 9",
+      "target": "Grade 9 students",
+      "objective": "Accelerate review for semester exams and periodic tests. Follow the textbook program.",
+      "duration": "1 year",
+      "special_features": [
+        "Detailed review outline",
+        "Question and answer sessions",
+        "Periodic mock tests"
+      ],
+      "description": "📍 High intensity practice, 1-1 correction.",
+      "level": "6.5+ | Focus on test-taking and thinking skills"
+    },
+    {
+      "id": 6,
+      "name": "Star - Target Course for Class 10",
+      "target": "Grade 10 students",
+      "objective": "Consolidate basic and advanced knowledge. Prepare for final exams and gifted student exams.",
+      "duration": "1 year",
+      "special_features": [
+        "Detailed analysis of assignments",
+        "Quick solving techniques",
+        "Review by topic"
+      ],
+      "description": "📍 Pass 7.0 with advanced techniques & thinking reflexes.",
+      "level": "6.5+ aiming 7.5+"
+    }
+  ]
+  
