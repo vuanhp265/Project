@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../style/AboutUs.css'; 
+import '../Style/AboutUs.css'; 
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGraduationCap, faChalkboardTeacher, faBookOpen, faUsers, faClock, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
