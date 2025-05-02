@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../style/AboutUs.css'; 
+import '../Style/AboutUs.css'; 
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGraduationCap, faChalkboardTeacher, faBookOpen, faUsers, faClock, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
@@ -23,7 +23,7 @@ function AboutUsAdvanced() {
             <h1>Achieve Your Dream IELTS Score with Our Expert Guidance</h1>
             <p className="subtitle">Unlock global opportunities with our comprehensive and results-oriented IELTS preparation courses.</p>
             <div className="cta-buttons">
-              <button className="primary-button">Explore Courses</button>
+              <button className="primary-button" href="/courses">Explore Courses</button>
               <button className="secondary-button">Contact Us</button>
             </div>
           </div>

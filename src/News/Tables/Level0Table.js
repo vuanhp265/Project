@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import data from '../../data/level0.json'; // Đường dẫn import dữ liệu
+import data from '../../data/level0.json'; // Data import path
 
 function Level0Table() {
   const [classSchedule, setClassSchedule] = useState([]);
@@ -9,33 +9,33 @@ function Level0Table() {
     setClassSchedule(data);
   }, []);
 
-  const getStatusBadgeClass = (status) => {
-    switch (status.toLowerCase()) {
-      case 'đang mở':
-        return 'badge-success';
-      case 'sắp khai giảng':
-        return 'badge-warning';
-      case 'đã đầy':
-        return 'badge-danger';
-      default:
-        return 'badge-secondary';
-    }
-  };
+  // const getStatusBadgeClass = (status) => {
+  //   switch (status.toLowerCase()) {
+  //     case 'open':
+  //       return 'badge-success';
+  //     case 'school is about to start':
+  //       return 'badge-warning';
+  //     case 'is full':
+  //       return 'badge-danger';
+  //     default:
+  //       return 'badge-secondary';
+  //   }
+  // };
 
   return (
     <div className="container mt-4">
-      <h2>Lịch Khai Giảng Lớp Tiếng Anh 1.0-5.0 IELTS</h2>
+      <h2>English Class Schedule 1.0-5.0 IELTS</h2>
       <table className="table table-bordered table-striped">
         <thead className="thead-dark">
           <tr>
             <th>ID</th>
-            <th>Tên Lớp</th>
-            <th>Trình Độ</th>
-            <th>Ngày Bắt Đầu</th>
-            <th>Ngày Kết Thúc</th>
-            <th>Lịch Học</th>
-            <th>Giáo Viên</th>
-            <th>Trạng Thái</th>
+            <th>Class Name</th>
+            <th>Level</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Schedule</th>
+            <th>Teacher</th>
+            <th>Status</th>
             <th></th>
           </tr>
         </thead>
@@ -50,13 +50,13 @@ function Level0Table() {
               <td>{item.schedule}</td>
               <td>{item.teacher}</td>
               <td>
-                <span className={`badge ${getStatusBadgeClass(item.status)}`}>
+                <span style={{color:"FFFF"}}>
                   {item.status}
                 </span>
               </td>
               <td>
                 <Link to={`/class/${item.id}`} className="btn btn-sm btn-info">
-                  Xem Chi Tiết
+                  See Details
                 </Link>
               </td>
             </tr>

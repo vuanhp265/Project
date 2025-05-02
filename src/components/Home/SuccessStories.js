@@ -2,18 +2,21 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import './SuccessStories.css';
+import anna_lee from '../../assets/images/anna_lee.jpg';
+import mark_tran from '../../assets/images/mark_tran.jpg';
+
 
 const SuccessStories = () => {
   const stories = [
     {
       name: 'Anna Lee',
       quote: 'Thanks to the IELTS course, I scored 8.0 and got into my dream university!',
-      image: 'https://via.placeholder.com/100',
+      image: anna_lee,
     },
     {
       name: 'Mark Tran',
       quote: 'The instructors were amazing and helped me improve my speaking skills.',
-      image: 'https://via.placeholder.com/100',
+      image: mark_tran,
     },
   ];
 
@@ -30,7 +33,7 @@ const SuccessStories = () => {
                     src={story.image}
                     alt={story.name}
                     className="rounded-circle me-3"
-                    style={{ width: '80px', height: '80px' }}
+                    style={{ width: '100px', height: '100px' }}
                   />
                   <div>
                     <Card.Title>{story.name}</Card.Title>
