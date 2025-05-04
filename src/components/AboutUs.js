@@ -1,6 +1,7 @@
 import React from 'react';
 
-import '../Style/AboutUs.css'; 
+import '../Style/AboutUs.css';
+import { Link } from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGraduationCap, faChalkboardTeacher, faBookOpen, faUsers, faClock, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
@@ -8,6 +9,7 @@ import instructorImage from '../images/su-menh-3.webp'; // Replace with your act
 import Image from '../images/hoc-la-phai-dung-duoc.webp';
 import Image1 from '../images/su-menh-2.webp';
 import Image2 from '../images/su-menh-4.webp';
+
 
 
 
@@ -23,8 +25,12 @@ function AboutUsAdvanced() {
             <h1>Achieve Your Dream IELTS Score with Our Expert Guidance</h1>
             <p className="subtitle">Unlock global opportunities with our comprehensive and results-oriented IELTS preparation courses.</p>
             <div className="cta-buttons">
-              <button className="primary-button" href="/courses">Explore Courses</button>
+            <Link to="/courses" className="primary-button-link"> {/* Thêm Link và class cho việc style */}
+              <button className="primary-button">Explore Courses</button>
+            </Link>
+            <Link to="/contact" className="primary-button-link"> {/* Thêm Link và class cho việc style */}
               <button className="secondary-button">Contact Us</button>
+            </Link>
             </div>
           </div>
           <div className="hero-advanced-image">
@@ -128,7 +134,9 @@ function AboutUsAdvanced() {
         <div className="cta-advanced-content">
           <h2>Ready to Elevate Your IELTS Score?</h2>
           <p>Join our community of successful IELTS test-takers. Enroll in our courses today!</p>
-          <button className="primary-button">View Our Course Catalog</button>
+          <Link to="/courses" className="primary-button-link"> {/* Thêm Link và class cho việc style */}
+            <button className="primary-button">View Our Course Catalog</button>
+          </Link>
         </div>
       </section>
 
