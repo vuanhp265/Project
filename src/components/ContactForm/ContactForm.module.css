@@ -1,0 +1,166 @@
+.contactFormSection {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .formTitle {
+    text-align: center;
+    color: #2563eb;
+    margin-bottom: 30px;
+    font-size: 2.25em;
+    font-weight: 600;
+  }
+  
+  .formGroup {
+    margin-bottom: 25px;
+  }
+  
+  .formGroup label {
+    display: block;
+    margin-bottom: 10px;
+    color: #374151;
+    font-weight: 500;
+    font-size: 1em;
+  }
+  
+  .formGroup input[type="text"],
+  .formGroup input[type="email"],
+  .formGroup input[type="tel"],
+  .formGroup textarea {
+    width: calc(100% - 20px);
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: border-color 0.2s ease-in-out;
+  }
+  
+  .formGroup input[type="text"]:focus,
+  .formGroup input[type="email"]:focus,
+  .formGroup input[type="tel"]:focus,
+  .formGroup textarea:focus {
+    border-color: #2563eb;
+    outline: none;
+    box-shadow: 0 0 0 0.15rem rgba(37, 99, 235, 0.25);
+  }
+  
+  .formGroup textarea {
+    min-height: 150px;
+  }
+  
+  .errorMessage {
+    color: #dc2626;
+    font-size: 0.9em;
+    margin-top: 8px;
+  }
+  
+  .submitButton {
+    background-color: #2563eb;
+    color: white;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  .submitButton:hover {
+    background-color: #1d4ed8;
+    transform: scale(1.02);
+  }
+  
+  .alert {
+    padding: 16px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    font-size: 1em;
+  }
+  
+  .alertSuccess {
+    background-color: #d1fae5;
+    color: #166534;
+    border: 1px solid #a7f3d0;
+  }
+  
+  .alertError {
+    background-color: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #fca5a5;
+  }
+  
+  /* Lớp phủ thành công (full màn hình) */
+  .successOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .successMessage {
+    background-color: #e3f2fd; /* Màu xanh dương nhạt (Light Blue shade) */
+    color: #1e88e5; /* Màu xanh dương đậm hơn một chút cho chữ */
+    padding: 25px 40px;
+    border-radius: 10px;
+    font-size: 1.6em;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border: 1px solid #bbdefb; /* Thêm một đường viền nhạt hơn */
+  }
+  
+  .successIcon {
+    margin-right: 10px;
+    font-size: 1.2em;
+    color: #1e88e5; /* Màu xanh dương cho icon */
+  }
+  
+  /* Hiệu ứng Scale In */
+  .animateScaleIn {
+    animation-name: scaleIn;
+  }
+  
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Hiệu ứng Scale Out */
+  .animateScaleOut {
+    animation-name: scaleOut;
+  }
+  
+  @keyframes scaleOut {
+    from {
+      opacity: 1;
+      transform: scale(1);
+    }
+    to {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+  }
