@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaPhone, FaFacebookF, FaYoutube, FaUser, FaSearch } from 'react-icons/fa';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import logo from './ielts_logo.png';
+
+
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -55,8 +58,14 @@ function Header() {
               <li className="nav-item">
                 <Link className="nav-link" to="/courses">Courses</Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/information">Information</Link>
+              <li className="nav-item dropdown">
+                {/* <Link className="nav-link" to="/information">Information</Link> */}
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Information</a>
+                  <ul class="dropdown-menu">
+                    <Link className="nav-link" to="/information">Schedule</Link>
+                    <Link className="nav-link" to="/information">Recruitment</Link>
+                  </ul>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/about">About Us</Link>
@@ -74,7 +83,7 @@ function Header() {
                   onChange={(e) => setSearchQuery(e.target.value)}
                 />
               </div>
-              <Link to="/login" className="btn btn-outline-primary me-2">
+              <Link to="/LoginPage" className="btn btn-outline-primary me-2">
                 <FaUser className="me-1" /> Login
               </Link>
               <Link to="/register" className="btn btn-primary">
