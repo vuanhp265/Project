@@ -17,6 +17,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Information from './News/recruitment/information';
 import ContactPage from './pages/Home/ContactPage';
+import LoginPage from './components/login/LoginPage';
 
 
 function Appone() {
@@ -46,6 +47,7 @@ function Appone() {
             <Route path="/about" element={<AboutUs />} />
             <Route path="/information" element={<Information />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/LoginPage" element={<LoginPage />} />
           </Routes>
         </div>
 
