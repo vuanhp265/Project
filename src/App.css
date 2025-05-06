@@ -302,8 +302,8 @@ body.dark-mode {
 /* --- Circle Badge (TRẢ KẾT QUẢ NGAY) --- */
 .circle-badge {
   position: absolute;
-  left: 10%;
-  top: 20%;
+  left: 5%; /* Giảm khoảng cách để tránh form */
+  top: 5%; /* Di chuyển lên trên form */
   background: red;
   color: white;
   width: 120px;
@@ -320,6 +320,7 @@ body.dark-mode {
   cursor: pointer;
   transition: transform 0.3s ease;
 }
+
 
 .circle-badge:hover {
   transform: scale(1.1) rotate(-10deg);
