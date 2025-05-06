@@ -18,6 +18,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Information from './News/recruitment/information';
 import ContactPage from './pages/Home/ContactPage';
 import LoginPage from './components/login/LoginPage';
+import RegisterPage from './components/RegisterPage/RegisterPage';
+import ForgotPasswordPage from './components/ForgotPasswordPage/ForgotPasswordPage';
 
 
 function Appone() {
@@ -48,6 +50,8 @@ function Appone() {
             <Route path="/information" element={<Information />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/LoginPage" element={<LoginPage />} />
+            <Route path="/RegisterPage" element={<RegisterPage />} />
+            <Route path="/ForgotPasswordPage" element={<ForgotPasswordPage />} />
           </Routes>
         </div>
 
