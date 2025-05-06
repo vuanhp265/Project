@@ -5,6 +5,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import logo from './ielts_logo.png';
 
 
+
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
@@ -82,7 +83,7 @@ function Header() {
                   onChange={(e) => setSearchQuery(e.target.value)}
                 />
               </div>
-              <Link to="/login" className="btn btn-outline-primary me-2">
+              <Link to="/LoginPage" className="btn btn-outline-primary me-2">
                 <FaUser className="me-1" /> Login
               </Link>
               <Link to="/register" className="btn btn-primary">
