@@ -20,6 +20,10 @@ import ContactPage from './pages/Home/ContactPage';
 import LoginPage from './components/login/LoginPage';
 import RegisterPage from './components/RegisterPage/RegisterPage';
 import ForgotPasswordPage from './components/ForgotPasswordPage/ForgotPasswordPage';
+import SchedulePage from './pages/Home/SchedulePage';
+import PrivacyPolicy from './components/PrivacyPolicy/PrivacyPolicy';
+import Instructors from './components/Instructors/Instructors';
+import SuccessStories1 from './components/SuccessStories/SuccessStories1';
 
 
 function Appone() {
@@ -52,6 +56,10 @@ function Appone() {
             <Route path="/LoginPage" element={<LoginPage />} />
             <Route path="/RegisterPage" element={<RegisterPage />} />
             <Route path="/ForgotPasswordPage" element={<ForgotPasswordPage />} />
+            <Route path="/SchedulePage" element={<SchedulePage />} />
+            <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
+            <Route path="/Instructors" element={<Instructors />} />
+            <Route path="/SuccessStories1" element={<SuccessStories1 />} />
           </Routes>
         </div>
 
