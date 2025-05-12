@@ -71,6 +71,7 @@ function Footer() {
               </div>
             </div>
 
+
             {/* Quick Links */}
             <div className="mb-4">
               <h5 className="text-primary mb-3">Quick Links</h5>

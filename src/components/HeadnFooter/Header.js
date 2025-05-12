@@ -63,7 +63,7 @@ function Header() {
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Information</a>
                   <ul class="dropdown-menu">
-                    <Link className="nav-link" to="/information">Schedule</Link>
+                    <Link className="nav-link" to="/SchedulePage">Schedule</Link>
                     <Link className="nav-link" to="/information">Recruitment</Link>
                   </ul>
               </li>
@@ -75,7 +75,7 @@ function Header() {
             {/* Right Side Actions */}
             <div className="d-flex align-items-center">
               <div className="search-box me-3">
-                <FaSearch className="search-icon" />
+                
                 <input
                   type="text"
                   placeholder="Search..."

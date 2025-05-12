@@ -62,7 +62,7 @@ function Register() {
             <input
               type="tel"
               className="form-control"
-              placeholder="Enter your phone number"
+              placeholder="Enter your address"
             />
           </div>
           <div className="col-md-4">
@@ -70,7 +70,8 @@ function Register() {
             <input
               type="text"
               className="form-control"
-              placeholder="Enter your address"
+              placeholder="Enter your phone number"
+              
             />
           </div>
         </div>

@@ -139,18 +139,6 @@ function AboutUsAdvanced() {
           </Link>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="advanced-footer">
-        <div className="footer-content">
-          <p>&copy; {new Date().getFullYear()} Your Advanced IELTS Prep Center | <a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms of Service</a></p>
-          <div className="social-links">
-            {/* Add social media icons/links */}
-            {/* <a href="#"><FontAwesomeIcon icon={faFacebook} /></a>
-            <a href="#"><FontAwesomeIcon icon={faTwitter} /></a> */}
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
