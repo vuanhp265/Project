@@ -5,15 +5,11 @@ import { Link } from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGraduationCap, faChalkboardTeacher, faBookOpen, faUsers, faClock, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
-import instructorImage from '../images/su-menh-3.webp'; // Replace with your actual image path
-import Image from '../images/hoc-la-phai-dung-duoc.webp';
-import Image1 from '../images/su-menh-2.webp';
-import Image2 from '../images/su-menh-4.webp';
-
-
-
-
-
+import instructorImage from '../images/su-menh-3.webp';
+import Image from '../images/hoc-la-phai-dung-duoc.webp'; // Replace with your actual image path
+import Image10 from '../assets/images/john_doe.jpg';
+import Image11 from '../assets/images/jane_smith.webp';
+import Image12 from '../assets/images/emily_brown.webp';
 
 function AboutUsAdvanced() {
   return (
@@ -115,15 +111,20 @@ function AboutUsAdvanced() {
         <h2>Meet Our Dedicated Team</h2>
         <div className="team-grid">
           <div className="team-member">
-            <img src={Image2} alt="Instructor 1" className="team-member-image" />
-            <h3>Nguyen Van A</h3>
-            <p className="team-member-title">Lead IELTS Instructor</p>
+            <img src={Image10} alt="Instructor 1" className="team-member-image" />
+            <h3>Dr. Emily Carter</h3>
+            <p className="team-member-title">IELTS Reading & Writing Specialist</p>
             {/* Add social media links or a brief bio if needed */}
           </div>
           <div className="team-member">
-            <img src={Image1} alt="Instructor 2" className="team-member-image" />
-            <h3>Tran Thi B</h3>
-            <p className="team-member-title">Senior IELTS Tutor</p>
+            <img src={Image11} alt="Instructor 2" className="team-member-image" />
+            <h3>Mr. James Miller</h3>
+            <p className="team-member-title">IELTS Listening & Speaking Exper</p>
+          </div>
+          <div className="team-member">
+            <img src={Image12} alt="Instructor 2" className="team-member-image" />
+            <h3>Ms. Sophia Lee</h3>
+            <p className="team-member-title">Overall IELTS Strategy & Techniques</p>
           </div>
           {/* Add more team members */}
         </div>
@@ -132,7 +133,7 @@ function AboutUsAdvanced() {
       {/* Call to Action Section */}
       <section className="cta-advanced-section">
         <div className="cta-advanced-content">
-          <h2>Ready to Elevate Your IELTS Score?</h2>
+          <h2 style={{color: 'white'}}>Ready to Elevate Your IELTS Score?</h2>
           <p>Join our community of successful IELTS test-takers. Enroll in our courses today!</p>
           <Link to="/courses" className="primary-button-link"> {/* Thêm Link và class cho việc style */}
             <button className="primary-button">View Our Course Catalog</button>

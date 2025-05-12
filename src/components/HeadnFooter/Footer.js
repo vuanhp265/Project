@@ -66,7 +66,7 @@ function Footer() {
               <li><a href="/courses" className="text-white">Courses</a></li>
               <li><a href="/Instructors" className="text-white">Instructors</a></li>
               <li><a href="/SuccessStories1" className="text-white">Success Stories</a></li>
-              <li><a href="#contact-us" className="text-white">Contact Us</a></li>
+              <li><a href="/contact" className="text-white">Contact Us</a></li>
               <li><a href="/PrivacyPolicy" className="text-white">Privacy Policy</a></li>
             </ul>
           </div>

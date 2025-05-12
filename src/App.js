@@ -24,6 +24,7 @@ import SchedulePage from './pages/Home/SchedulePage';
 import PrivacyPolicy from './components/PrivacyPolicy/PrivacyPolicy';
 import Instructors from './components/Instructors/Instructors';
 import SuccessStories1 from './components/SuccessStories/SuccessStories1';
+import IELTSProficiencyTest from './components/IELTSProficiencyTest/IELTSProficiencyTest';
 
 
 function Appone() {
@@ -60,6 +61,7 @@ function Appone() {
             <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
             <Route path="/Instructors" element={<Instructors />} />
             <Route path="/SuccessStories1" element={<SuccessStories1 />} />
+            <Route path="/IELTSProficiencyTest" element={<IELTSProficiencyTest />} />
           </Routes>
         </div>
 

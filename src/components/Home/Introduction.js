@@ -1,7 +1,7 @@
 // src/components/Home/Introduction.js
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import './Introduction.css';
+import '../Home/Introduction.css';
 import studentlearning from '../../assets/images/studentlearning.jpg'; // Đường dẫn đến ảnh
 
 const Introduction = () => {

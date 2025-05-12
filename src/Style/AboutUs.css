@@ -251,7 +251,7 @@
   
   .cta-advanced-content p {
     font-size: 1.2em;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
   }
   
   .cta-advanced-content .primary-button {
@@ -263,6 +263,7 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 30px;
   }
   
   .cta-advanced-content .primary-button:hover {

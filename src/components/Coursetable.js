@@ -134,7 +134,7 @@ function CoursePage() {
             />
           </div>
           <div className="col-12">
-            <Button type="submit" size="lg" className="test-button">
+            <Button type="submit" size="lg" className="test-button " href='/IELTSProficiencyTest'>
               TEST NOW
             </Button>
           </div>
