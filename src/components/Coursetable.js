@@ -142,7 +142,7 @@ function CoursePage() {
         </Form>
       </div>
       {/* --- END: Test Form Section --- */}
-
+      
       {/* --- START: Course List Section --- */}
       <div className="course-list-container my-5">
         <div className="d-flex justify-content-between align-items-center mb-4">
