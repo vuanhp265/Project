@@ -72,7 +72,7 @@ function Footer() {
             </div>
 
             {/* Quick Links */}
-            <div className="col-md-2 mb-4">
+            <div className="col-md-12 mb-4">
               <h5 className="text-primary mb-3">Quick Links</h5>
               <ul className="list-unstyled">
                 <li><a href="/courses" className="text-white">Courses</a></li>
