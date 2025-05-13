@@ -57,11 +57,11 @@ function LoginPage() {
 
   return (
     <div className="login-container">
-      <h2>Đăng Nhập</h2>
+      <h2>Login</h2>
       {error && <p className="error-message">{error}</p>}
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label htmlFor="username">Tên đăng nhập:</label>
+          <label htmlFor="username">Username:</label>
           <input
             type="text"
             id="username"
@@ -72,7 +72,7 @@ function LoginPage() {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="password">Mật khẩu:</label>
+          <label htmlFor="password">Password:</label>
           <input
             type="password"
             id="password"
@@ -82,16 +82,16 @@ function LoginPage() {
             required
           />
         </div>
-        <button type="submit" className="login-button">Đăng Nhập</button>
+        <button type="submit" className="login-button">Sign In</button>
 
-        {/* **Tính năng 7: Liên kết đến trang đăng ký (tùy chọn)** */}
+        {/* **Feature 7: Link to page register (optional)** */}
         <p className="signup-link">
-          Chưa có tài khoản? <a href="/register">Đăng ký ngay</a>
+          Don't have an account yet? <a href="/register">Register now</a>
         </p>
 
-        {/* **Tính năng 8: Liên kết đến trang quên mật khẩu (tùy chọn)** */}
+        {/* **Feature 8: Link to forgotten password page (optional)** */}
         <p className="forgot-password">
-          <a href="/forgot-password">Quên mật khẩu?</a>
+          <a href="/forgot-password">Forgot password?</a>
         </p>
       </form>
     </div>
