@@ -1,0 +1,94 @@
+.privacy-policy-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    font-family: 'Arial', sans-serif;
+    color: #444;
+    line-height: 1.7;
+    transition: box-shadow 0.3s ease; /* Smooth transition for shadow on hover */
+  }
+  
+  .privacy-policy-container:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1); /* Slightly more prominent shadow on hover */
+  }
+  
+  .privacy-policy-title {
+    font-size: 3.0em;
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  .privacy-policy-last-updated {
+    color: #888;
+    font-size: 0.95em;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .privacy-policy-section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Transitions for hover */
+  }
+  
+  .privacy-policy-section:hover {
+    transform: translateY(-2px); /* Slight upward movement on hover */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.07); /* Slightly more shadow on hover */
+  }
+  
+  .privacy-policy-section h2 {
+    font-size: 2.0em;
+    color: #333;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .privacy-policy-section p {
+    margin-bottom: 20px;
+  }
+  
+  .privacy-policy-contact {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.2s ease-in-out; /* Transition for contact section hover */
+  }
+  
+  .privacy-policy-contact:hover {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.07); /* Slight shadow on hover */
+  }
+  
+  .privacy-policy-contact h2 {
+    font-size: 2.0em;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  
+  .privacy-policy-contact p {
+    margin-bottom: 15px;
+  }
+  
+  .privacy-policy-contact a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease; /* Smooth color transition on hover */
+  }
+  
+  .privacy-policy-contact a:hover {
+    text-decoration: underline;
+    color: #0056b3; /* Darker blue on hover */
+  }

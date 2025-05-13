@@ -8,7 +8,7 @@ function Information() {
       <header
         className="text-white text-center d-flex flex-column justify-content-center align-items-center rounded-1"
         style={{
-          backgroundImage: "url('../images/brand.png')",
+          backgroundImage: "url('../images/imgbrand.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           height: "60vh",
@@ -17,21 +17,21 @@ function Information() {
       >
         <div className="bg-dark bg-opacity-50 p-4 rounded">
           <h1 className="display-4 fw-bold">Join Our Talented Team</h1>
-          <p className="lead">Discover your career opportunities at BEE</p>
+          <p className="lead">Discover your career opportunities at IELTS</p>
         </div>
       </header>
       {/* About Section */}
       <section className="container my-5">
         <div className="row align-items-center">
           <div className="col-md-6 text-center">
-            <h2 className="mb-4 text-primary ">About Us</h2>
+            <h2 className="mb-4 text-primary ">ABOUT US</h2>
             <p >
-            The working environment at Bee is dynamic, youthful and inspiring, that is what you can say about Bee. Let your talent and youth shine at Bee English, and bring positive values ​​to foreign language learning for the young generation of Vietnam!
+            The working environment at Bee is dynamic, youthful and inspiring, that is what you can say about Bee. Let your talent and youth shine at IELTS English, and bring positive values ​​to foreign language learning for the young generation of Vietnam!
             </p>
           </div>
           <div className="col-md-6">
             <img
-              src="../images/image3.png "
+              src="../images/img1.png"
               alt="Our Team"
               className="img-fluid rounded shadow"
               style={{
@@ -46,7 +46,7 @@ function Information() {
           
           <div className="col-md-6">
             <img
-              src="../images/image4.png "
+              src="../images/img2.png "
               alt="Our Team"
               className="img-fluid rounded shadow"
               style={{
@@ -57,7 +57,7 @@ function Information() {
           <div className="col-md-6 text-center">
             <h2 className="mb-4 text-primary ">JOB OPPORTUNITIES</h2>
             <p >
-               Many job opportunities at Bee to develop skills, expand personal network as well as "improve" income level are waiting for you at Bee English Community!
+               Many job opportunities at Bee to develop skills, expand personal network as well as "improve" income level are waiting for you at IELTS English Community!
             </p>
           </div>
         </div>
@@ -68,9 +68,9 @@ function Information() {
           <h2 className="text-center mb-5 text-primary">Open Positions</h2>
           <div className="row g-4">
             {[
-              { title: "Marketing Executive", img: "../images/image1.png" },
-              { title: "ReactJS Developer", img: "../images/image2.png" },
-              { title: "HR Specialist", img: "../images/image1.png" },
+              { title: "Teaching Assistant", img: "../images/teacherh.jpg" },
+              { title: "Instruct Recruitment", img: "../images/teachert.jpg" },
+              { title: "Ielts Teacher Recruitment", img: "../images/teacherj.jpg" },
             ].map((job, index) => (
               <div className="col-md-4" key={index}>
                 <div className="card h-100 shadow-sm">
@@ -91,10 +91,6 @@ function Information() {
           </div>
         </div>
       </section>
-
-      <footer className="text-white text-center py-4 mt-5" style={{ backgroundColor: 'blue' }}>
-        <p className="mb-0">© 2025 BEE Company - All rights reserved.</p>
-      </footer>
     </div>
   );
 }

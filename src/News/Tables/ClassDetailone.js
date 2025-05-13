@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import dataone from '../../data/level1.json'; // Data import path of level1.json
+import { Link } from "react-router-dom";
 function ClassDetailone() {
   const { id } = useParams();
   const classInfo = dataone.find((item) => item.id === parseInt(id));
@@ -32,9 +33,9 @@ function ClassDetailone() {
           <p className="card-text"><strong>End Date:</strong> {classInfo.endDate}</p>
           <p className="card-text"><strong>Schedule:</strong> {classInfo.schedule}</p>
           <p className="card-text"><strong>Teacher:</strong> {classInfo.teacher}</p>
-          <p className="card-text"><strong>Status Thai:</strong> <span className={`badge ${getStatusBadgeClass(classInfo.status)}`}>{classInfo.status}</span></p>
           { /* Add more details if needed */}
         </div>
+        
       </div>
     </div>
   );

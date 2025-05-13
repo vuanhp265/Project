@@ -29,7 +29,7 @@ function Home() {
   return (
     <section id="courses" className="py-5 bg-light">
       <div className="container">
-        <h2>Our Courses</h2>
+        {/* <h2>Our Courses</h2>
         <div className="mb-3">
           <label htmlFor="subjectFilter" className="mr-2">Filter by Subject:</label>
           <select
@@ -44,8 +44,8 @@ function Home() {
               </option>
             ))}
           </select>
-        </div>
-        <div className="row">
+        </div> */}
+        {/* <div className="row">
           {filteredCourses.map((course) => (
             <div key={course.id} className="col-md-4 mb-4">
               <div className="card">
@@ -64,7 +64,7 @@ function Home() {
           <a href="/data/price-list.pdf" className="btn btn-success" download>
             Download Price List
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );
