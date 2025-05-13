@@ -16,6 +16,15 @@ import MainRoutes from './Routes/MainRoutes';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Information from './News/recruitment/information';
+import ContactPage from './pages/Home/ContactPage';
+import LoginPage from './components/login/LoginPage';
+import RegisterPage from './components/RegisterPage/RegisterPage';
+import ForgotPasswordPage from './components/ForgotPasswordPage/ForgotPasswordPage';
+import SchedulePage from './pages/Home/SchedulePage';
+import PrivacyPolicy from './components/PrivacyPolicy/PrivacyPolicy';
+import Instructors from './components/Instructors/Instructors';
+import SuccessStories1 from './components/SuccessStories/SuccessStories1';
+import IELTSProficiencyTest from './components/IELTSProficiencyTest/IELTSProficiencyTest';
 
 
 function Appone() {
@@ -44,6 +53,15 @@ function Appone() {
             <Route path="/courses" element={<CourseTable />} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="/information" element={<Information />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/LoginPage" element={<LoginPage />} />
+            <Route path="/RegisterPage" element={<RegisterPage />} />
+            <Route path="/ForgotPasswordPage" element={<ForgotPasswordPage />} />
+            <Route path="/SchedulePage" element={<SchedulePage />} />
+            <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
+            <Route path="/Instructors" element={<Instructors />} />
+            <Route path="/SuccessStories1" element={<SuccessStories1 />} />
+            <Route path="/IELTSProficiencyTest" element={<IELTSProficiencyTest />} />
           </Routes>
         </div>
 

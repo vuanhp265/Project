@@ -1,0 +1,190 @@
+.success-stories {
+  background-color: #f8f9fa;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.success-stories h2 {
+  color: #3498db;
+  text-align: center;
+  margin-bottom: 60px;
+  font-weight: bold;
+  font-size: 3.5em;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap; /* Đảm bảo các cột xuống dòng khi không đủ không gian */
+  margin-top: -15px;
+  margin-left: -15px;
+}
+
+.col-md-6,
+.col-lg-4 {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 30px;
+  display: flex; /* Sử dụng flexbox cho các cột */
+}
+
+.story-card {
+  border: none;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  display: flex; /* Sử dụng flexbox cho card */
+  flex-direction: column; /* Các phần tử bên trong card xếp theo chiều dọc */
+  height: 100%; /* Card sẽ cao bằng cột chứa nó */
+}
+
+.story-card:hover {
+  transform: translateY(-5px);
+}
+
+.image-wrapper {
+  overflow: hidden;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card-img-top {
+  transition: transform 0.3s ease-in-out;
+}
+
+.story-card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+.card-body {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Card body sẽ giãn ra để lấp đầy không gian còn lại */
+}
+
+.story-name {
+  font-size: 1.8em;
+  color: #2c3e50;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.text-muted {
+  color: #777 !important;
+  font-style: italic;
+  margin-bottom: 12px;
+}
+
+.story-course {
+  color: #555;
+  margin-bottom: 10px;
+  font-size: 1.05em;
+}
+
+.story-short-text {
+  color: #666;
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.btn-outline-info {
+  color: #3498db;
+  border-color: #3498db;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-info:hover {
+  background-color: #3498db;
+  color: white;
+  border-color: #3498db;
+}
+
+.story-meta {
+  margin-top: auto; /* Đẩy story-meta xuống cuối card body */
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.tags .badge {
+  font-size: 0.85em;
+}
+
+.interactions span {
+  font-size: 0.95em;
+  color: #888;
+}
+
+.form-control {
+  border-radius: 10px;
+  padding: 12px;
+  border: 1px solid #ccc;
+}
+
+.form-control:focus {
+  border-color: #3498db;
+  box-shadow: none;
+}
+
+.comments {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.comments-title {
+  font-size: 1.1em;
+  color: #3498db;
+  margin-bottom: 10px;
+}
+
+.comment {
+  margin-bottom: 8px;
+  font-size: 0.95em;
+  color: #555;
+}
+
+.comment-user {
+  font-weight: bold;
+  color: #2c3e50;
+  margin-right: 5px;
+}
+
+.btn-link {
+  padding: 0;
+  margin-top: 5px;
+  color: #3498db;
+  text-decoration: none;
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+}
+
+.add-comment {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.add-comment-title {
+  font-size: 1.1em;
+  color: #28a745; /* Một màu khác để phân biệt */
+  margin-bottom: 10px;
+}
+
+.add-comment textarea.form-control {
+  border-radius: 8px;
+}
+
+.add-comment .btn-primary {
+  background-color: #28a745;
+  border-color: #28a745;
+  transition: all 0.3s ease;
+}
+
+.add-comment .btn-primary:hover {
+  background-color: #1e7e34;
+  border-color: #1e7e34;
+}

@@ -15,7 +15,7 @@
     },
     {
       "id": 2,
-      "name": "Star - Foundation Course for Class 6",
+      "name": "Star - Foundation Course",
       "target": "Grade 6 students",
       "objective": "Solid knowledge of Math and Science. Develop logical and creative thinking.",
       "duration": "1 year",
@@ -29,7 +29,7 @@
     },
     {
       "id": 3,
-      "name": "Star - Foundation Course for Class 7",
+      "name": "Star - Foundation Course",
       "target": "Grade 7 students",
       "objective": "Consolidate knowledge foundation. Prepare for semester exams and excellent student exams.",
       "duration": "1 year",
@@ -43,7 +43,7 @@
     },
     {
       "id": 4,
-      "name": "Star - Foundation Course for Class 8",
+      "name": "Star - Foundation Course",
       "target": "Grade 8 students",
       "objective": "Complete basic knowledge. Review orientation for grade 9 entrance exam.",
       "duration": "1 year",
@@ -57,7 +57,7 @@
     },
     {
       "id": 5,
-      "name": "Star - Target Course for Class 9",
+      "name": "Star - Target Course",
       "target": "Grade 9 students",
       "objective": "Accelerate review for semester exams and periodic tests. Follow the textbook program.",
       "duration": "1 year",
@@ -71,7 +71,7 @@
     },
     {
       "id": 6,
-      "name": "Star - Target Course for Class 10",
+      "name": "Star - Target Course",
       "target": "Grade 10 students",
       "objective": "Consolidate basic and advanced knowledge. Prepare for final exams and gifted student exams.",
       "duration": "1 year",

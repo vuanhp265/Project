@@ -1,0 +1,80 @@
+.contactPageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #f7f7f7;
+    min-height: calc(100vh - 100px);
+  }
+  
+  .contactWrapper {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    padding: 40px;
+    width: 95%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Hai cột cho Liên hệ và Form */
+    grid-template-rows: auto 1fr; /* Hai hàng: Liên hệ/Form và Bản đồ */
+    gap: 30px;
+  }
+  
+  .contactInfo {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  
+  .contactFormSection {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+  
+  .mapContainer {
+    grid-column: 1 / 3; /* Bản đồ chiếm toàn bộ chiều rộng */
+    grid-row: 2 / 3;
+  }
+  
+  .mapContainer h3 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+  }
+  
+  .mapResponsive {
+    width: 100%;
+    height: 400px;
+  }
+  
+  .mapResponsive iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .contactWrapper {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto 1fr; /* Ba hàng: Liên hệ, Form, Bản đồ */
+      flex-direction: column;
+    }
+  
+    .contactInfo {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+  
+    .contactFormSection {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+    }
+  
+    .mapContainer {
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+    }
+  }

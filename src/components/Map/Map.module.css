@@ -1,0 +1,25 @@
+.mapContainer {
+    margin-top: 30px;
+    border-radius: 8px;
+    overflow: hidden; /* Ẩn các phần tràn ra ngoài border-radius */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .mapContainer h3 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .mapResponsive {
+    width: 100%;
+    height: 400px; /* Chiều cao tự động điều chỉnh theo tỷ lệ khung hình */
+  }
+  
+  /* Nếu bạn muốn giới hạn chiều cao tối đa */
+  /* .mapResponsive iframe {
+    max-height: 400px;
+  } */

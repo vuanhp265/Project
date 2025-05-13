@@ -1,15 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaPhone, FaFacebookF, FaYoutube, FaUser, FaSearch } from 'react-icons/fa';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import logo from './ielts_logo.png';
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
+  const [visitorCount, setVisitorCount] = useState(0);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  // Simulating visitor count, it can be updated based on a real backend or API
+  useEffect(() => {
+    const currentCount = localStorage.getItem('visitorCount') || 0;
+    const newCount = parseInt(currentCount) + 1;
+    localStorage.setItem('visitorCount', newCount);  // Save updated count in localStorage
+    setVisitorCount(newCount);
+  }, []);
 
   return (
     <header className="header">
@@ -26,6 +36,11 @@ function Header() {
             <a href="https://youtube.com" className="text-white"><FaYoutube /></a>
           </div>
         </div>
+      </div>
+
+      {/* Visitor Count */}
+      <div className="visitor-count position-absolute top-0 end-0 p-2 bg-light">
+        <span>Visitor Count: {visitorCount}</span>
       </div>
 
       {/* Main Navigation */}
@@ -55,8 +70,13 @@ function Header() {
               <li className="nav-item">
                 <Link className="nav-link" to="/courses">Courses</Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/information">Information</Link>
+              <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Information</a>
+                  <ul className="dropdown-menu">
+                    <Link className="nav-link" to="/SchedulePage">Schedule</Link>
+                    <Link className="nav-link" to="/information">Recruitment</Link>
+                  </ul>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/about">About Us</Link>
@@ -66,7 +86,6 @@ function Header() {
             {/* Right Side Actions */}
             <div className="d-flex align-items-center">
               <div className="search-box me-3">
-                <FaSearch className="search-icon" />
                 <input
                   type="text"
                   placeholder="Search..."
@@ -74,11 +93,11 @@ function Header() {
                   onChange={(e) => setSearchQuery(e.target.value)}
                 />
               </div>
-              <Link to="/login" className="btn btn-outline-primary me-2">
+              <Link to="/LoginPage" className="btn btn-outline-primary me-2">
                 <FaUser className="me-1" /> Login
               </Link>
-              <Link to="/register" className="btn btn-primary">
-                Register Now
+              <Link to="/RegisterPage" className="btn btn-primary">
+                Register
               </Link>
             </div>
           </div>

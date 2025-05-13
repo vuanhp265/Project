@@ -1,0 +1,72 @@
+/* Popup overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Popup box */
+.exact-success-popup {
+  background-color: #e3f2fd; 
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+/* Success icon */
+.exact-success-icon {
+  color: #2196f3; /* Màu xanh dương của icon */
+  font-size: 1.5rem;
+  margin-right: 0.75rem;
+  vertical-align: middle; /* Căn giữa theo chiều dọc */
+}
+
+/* Success message */
+.exact-success-message {
+  color: #2196f3; /* Màu xanh dương của chữ */
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0;
+  vertical-align: middle; /* Căn giữa theo chiều dọc */
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+    transform: translateY(-3px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.exact-success-popup {
+  animation: fadeIn 0.4s ease-out; /* Chậm hơn và dùng ease-out */
+}
+
+.exact-success-message {
+  animation: fadeInText 0.5s ease-out; /* Chậm hơn và dùng ease-out */
+}

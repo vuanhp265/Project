@@ -1,0 +1,18 @@
+.visitor-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px 15px;
+    background-color: rgba(0, 0, 0, 0.6);  /* Darker background for better contrast */
+    color: #fff;  /* White text for better readability */
+    font-size: 14px;
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Add a subtle shadow for better visibility */
+    z-index: 1000; /* Ensure it appears on top of other content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import data from '../../data/level0.json'; // Data import path of level0.json
+import { Link } from "react-router-dom";
 function ClassDetail() {
   const { id } = useParams();
   const classInfo = data.find((item) => item.id === parseInt(id));
@@ -32,10 +33,18 @@ function ClassDetail() {
           <p className="card-text"><strong>End Date:</strong> {classInfo.endDate}</p>
           <p className="card-text"><strong>Schedule:</strong> {classInfo.schedule}</p>
           <p className="card-text"><strong>Teacher:</strong> {classInfo.teacher}</p>
-          <p className="card-text"><strong>Status Thai:</strong> <span className={`badge ${getStatusBadgeClass(classInfo.status)}`}>{classInfo.status}</span></p>
           { /* Add more details if needed */}
         </div>
       </div>
+       <div className="d-grid gap-2 d-md-flex justify-content-md-end p-3">
+       <Link to="/RegisterPage" className="btn btn-primary">
+            Register
+        </Link>
+        <Link to="/SchedulePage" className="btn btn-danger">
+            Cancel
+        </Link>
+                
+              </div>
     </div>
   );
 }
