@@ -15,21 +15,21 @@ function LoginPage() {
     } else if (name === 'password') {
       setPassword(value);
     }
-    setError(''); // Xóa thông báo lỗi khi người dùng bắt đầu nhập
+    setError(''); // Clear error message when user starts typing
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // **Tính năng 1: Xác thực phía Client (ví dụ đơn giản)**
+    // **Feature 1: Client-side validation (simple example)**
     if (!username || !password) {
-      setError('Vui lòng nhập đầy đủ tên đăng nhập và mật khẩu.');
+      setError('Please enter both username and password.');
       return;
     }
 
-    // **Tính năng 2: Gọi API đăng nhập (giả định)**
+    // **Feature 2: Call login API (mock)**
     try {
-      const response = await fetch('/api/login', { // Thay '/api/login' bằng API thực tế của bạn
+      const response = await fetch('/api/login', { // Replace '/api/login' with your actual API endpoint
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -40,18 +40,18 @@ function LoginPage() {
       const data = await response.json();
 
       if (response.ok) {
-        // **Tính năng 3: Xử lý đăng nhập thành công**
-        console.log('Đăng nhập thành công!', data);
-        localStorage.setItem('authToken', data.token); // Lưu token (nếu có)
-        navigate('/dashboard'); // **Tính năng 4: Điều hướng sau khi đăng nhập**
+        // **Feature 3: Handle successful login**
+        console.log('Login successful!', data);
+        localStorage.setItem('authToken', data.token); // Store token (if any)
+        navigate('/dashboard'); // **Feature 4: Navigation after login**
       } else {
-        // **Tính năng 5: Xử lý lỗi đăng nhập từ API**
-        setError(data.message || 'Đăng nhập không thành công. Vui lòng thử lại.');
+        // **Feature 5: Handle login error from API**
+        setError(data.message || 'Login failed. Please try again.');
       }
     } catch (error) {
-      // **Tính năng 6: Xử lý lỗi mạng hoặc lỗi không xác định**
-      console.error('Lỗi đăng nhập:', error);
-      setError('Đã có lỗi xảy ra. Vui lòng thử lại sau.');
+      // **Feature 6: Handle network error or unknown error**
+      console.error('Login error:', error);
+      setError('An error occurred. Please try again later.');
     }
   };
 
@@ -82,16 +82,16 @@ function LoginPage() {
             required
           />
         </div>
-        <button type="submit" className="login-button">Sign In</button>
+        <button type="submit" className="login-button">Login</button>
 
-        {/* **Feature 7: Link to page register (optional)** */}
+        {/* **Feature 7: Link to registration page (optional)** */}
         <p className="signup-link">
-          Don't have an account yet? <a href="/register">Register now</a>
+          Don't have an account? <a href="/RegisterPage">Sign up</a>
         </p>
 
-        {/* **Feature 8: Link to forgotten password page (optional)** */}
+        {/* **Feature 8: Link to forgot password page (optional)** */}
         <p className="forgot-password">
-          <a href="/forgot-password">Forgot password?</a>
+          <a href="/ForgotPasswordPage">Forgot password?</a>
         </p>
       </form>
     </div>
