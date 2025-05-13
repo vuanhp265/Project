@@ -9,7 +9,7 @@ const CTA = () => {
       <Container>
         <h2 style={{color: 'white'}}>Ready to Start Your Journey?</h2>
         <p className="lead">Join our courses today and achieve your goals!</p>
-        <Button variant="light" size="lg" href="/contact">
+        <Button variant="light" size="lg" href="/RegisterPage">
           Get Started
         </Button>
       </Container>

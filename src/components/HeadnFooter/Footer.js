@@ -10,10 +10,10 @@ function Footer() {
   useEffect(() => {
     const updateDateTime = () => {
       const now = new Date();
-      const options = { 
-        weekday: 'long', 
-        year: 'numeric', 
-        month: 'long', 
+      const options = {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
         day: 'numeric',
         hour: '2-digit',
         minute: '2-digit',
@@ -61,7 +61,7 @@ function Footer() {
             <div className="mb-4">
               <h5 className="text-primary mb-3">Star IELTS Classes</h5>
               <p>
-                Specializing in comprehensive IELTS preparation with proven results. 
+                Specializing in comprehensive IELTS preparation with proven results.
                 Our expert instructors and tailored curriculum help students achieve their desired band scores.
               </p>
               <div className="social-icons">
@@ -71,29 +71,18 @@ function Footer() {
               </div>
             </div>
 
-          {/* Quick Links */}
-          <div className="col-md-2 mb-4">
-            <h5 className="text-primary mb-3">Quick Links</h5>
-            <ul className="list-unstyled">
-              <li><a href="/courses" className="text-white">Courses</a></li>
-              <li><a href="/Instructors" className="text-white">Instructors</a></li>
-              <li><a href="/SuccessStories1" className="text-white">Success Stories</a></li>
-              <li><a href="/contact" className="text-white">Contact Us</a></li>
-              <li><a href="/PrivacyPolicy" className="text-white">Privacy Policy</a></li>
-            </ul>
-          </div>
-
             {/* Quick Links */}
-            <div className="mb-4">
+            <div className="col-md-12 mb-4">
               <h5 className="text-primary mb-3">Quick Links</h5>
               <ul className="list-unstyled">
-                <li><a href="#courses" className="text-white">Courses</a></li>
-                <li><a href="#faculty" className="text-white">Instructors</a></li>
-                <li><a href="#success-stories" className="text-white">Success Stories</a></li>
-                <li><a href="#contact-us" className="text-white">Contact Us</a></li>
-                <li><a href="/privacy" className="text-white">Privacy Policy</a></li>
+                <li><a href="/courses" className="text-white">Courses</a></li>
+                <li><a href="/Instructors" className="text-white">Instructors</a></li>
+                <li><a href="/SuccessStories1" className="text-white">Success Stories</a></li>
+                <li><a href="/contact" className="text-white">Contact Us</a></li>
+                <li><a href="/PrivacyPolicy" className="text-white">Privacy Policy</a></li>
               </ul>
             </div>
+
           </div>
 
           {/* Middle Column: Contact Us, Newsletter */}
@@ -122,17 +111,17 @@ function Footer() {
               <h5 className="text-primary mb-3">IELTS Tips Newsletter</h5>
               <div>
                 <div className="mb-3">
-                  <input 
-                    type="email" 
-                    className="form-control" 
-                    placeholder="Your email" 
+                  <input
+                    type="email"
+                    className="form-control"
+                    placeholder="Your email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    required 
+                    required
                   />
                 </div>
-                <button 
-                  type="button" 
+                <button
+                  type="button"
                   className="btn btn-primary w-100"
                   onClick={handleSubscribe}
                 >
