@@ -82,7 +82,7 @@ function CoursePage() {
               onChange={handleInputChange}
               required
             >
-              <option value="">You are</option>
+              <option value="" disabled selected>You are</option>
               <option value="Student">Students</option>
               <option value="Working">Working person</option>
             </Form.Select>
@@ -94,7 +94,7 @@ function CoursePage() {
               onChange={handleInputChange}
               required
             >
-              <option value="">Target item point target</option>
+              <option value="" disabled selected>Target item point target</option>
               <option value="4.0+">4.0+</option>
               <option value="5.0+">5.0+</option>
               <option value="6.0+">6.0+</option>
@@ -104,15 +104,17 @@ function CoursePage() {
             </Form.Select>
           </div>
           <div className="col-md-6">
-            <Form.Control
-              type="text"
+            <Form.Select
               name="location"
               value={formData.location}
               onChange={handleInputChange}
-              placeholder="Choose the facility closest to you"
               required
-            />
-          </div>
+            >
+              <option value="" disabled selected>Choose the facility closest to you</option>
+              <option value="Ha Noi City">Ha Noi City</option>
+              <option value="Ho Chi Minh City">Ho Chi Minh City</option>
+            </Form.Select>
+        </div>
           <div className="col-md-6">
             <Form.Control
               type="email"

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../IELTSProficiencyTest/IELTSProficiencyTest.css';
+import { Link } from 'react-router-dom';
 
 function IELTSProficiencyTest() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -51,7 +52,7 @@ function IELTSProficiencyTest() {
     setCurrentQuestion(0);
     setAnswers({});
   };
-
+  
   const handleSubmitTest = () => {
     alert('End of the test! (Scoring functionality will be added later)');
     console.log('Answers:', answers);
@@ -70,6 +71,9 @@ function IELTSProficiencyTest() {
         <button className="start-test-button" onClick={handleStartTest}>
           Start Test Now
         </button>
+        <Link to="/courses" className="cancel-test-button">
+          Cancel
+        </Link>
       </div>
     );
   }
