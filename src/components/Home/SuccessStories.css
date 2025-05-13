@@ -1,93 +1,10 @@
-.success-stories {
-  background-color: #f8f9fa; /* Light grey background */
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
+/* src/components/Home/SuccessStories.css */
 .success-stories h2 {
-  color: #007bff; /* Primary blue color */
-  text-align: center;
-  margin-bottom: 40px;
-  font-weight: bold;
-  font-size: 2.5em;
-}
-
-.card {
-  border: none;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-  border-radius: 10px;
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-}
-
-.card-body {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-}
-
-.rounded-circle {
-  width: 100px !important; /* Override inline style */
-  height: 100px !important; /* Override inline style */
-  border-radius: 50%;
-  object-fit: cover;
-  margin-right: 20px;
-  border: 3px solid #e0f2f7; /* Light blue border */
-}
-
-.card-title {
-  font-size: 1.5em;
-  color: #333;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-.card-text {
-  font-size: 1em;
-  color: #555;
-}
-
-/* Căn giữa phần tử thứ ba (Priya Sharma) */
-.row > div:nth-child(3) {
-  grid-column: 1 / -1; /* Chiếm toàn bộ chiều rộng của row */
-  display: flex;
-  justify-content: center;
-}
-
-.row > div:nth-child(3) .card {
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-/* Điều chỉnh cho màn hình nhỏ hơn */
-@media (max-width: 768px) {
-  .row > div {
-    margin-bottom: 20px; /* Thêm khoảng cách giữa các card trên màn hình nhỏ */
+    font-size: 2rem;
+    font-weight: bold;
   }
-
-  .row > div:nth-child(3) {
-    grid-column: auto; /* Trả về bố cục mặc định trên màn hình nhỏ */
-    display: block;
-    text-align: center; /* Căn giữa nội dung bên trong col trên màn hình nhỏ */
+  
+  .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
-
-  .row > div:nth-child(3) .card {
-    max-width: 100%;
-    margin: 0 auto 20px auto; /* Thêm margin dưới trên màn hình nhỏ */
-  }
-
-  .row > div:nth-child(3) .card-body {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .row > div:nth-child(3) .rounded-circle {
-    margin-right: 0 !important;
-    margin-bottom: 15px;
-  }
-}

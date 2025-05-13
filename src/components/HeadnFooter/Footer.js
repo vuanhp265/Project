@@ -71,6 +71,17 @@ function Footer() {
               </div>
             </div>
 
+          {/* Quick Links */}
+          <div className="col-md-2 mb-4">
+            <h5 className="text-primary mb-3">Quick Links</h5>
+            <ul className="list-unstyled">
+              <li><a href="/courses" className="text-white">Courses</a></li>
+              <li><a href="/Instructors" className="text-white">Instructors</a></li>
+              <li><a href="/SuccessStories1" className="text-white">Success Stories</a></li>
+              <li><a href="/contact" className="text-white">Contact Us</a></li>
+              <li><a href="/PrivacyPolicy" className="text-white">Privacy Policy</a></li>
+            </ul>
+          </div>
 
             {/* Quick Links */}
             <div className="mb-4">

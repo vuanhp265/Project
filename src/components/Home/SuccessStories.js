@@ -1,7 +1,7 @@
 // src/components/Home/SuccessStories.js
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import './SuccessStories.css';
+import '../Home/SuccessStories.css';
 import anna_lee from '../../assets/images/anna_lee.jpg';
 import mark_tran from '../../assets/images/mark_tran.jpg';
 import PriyaSharma from '../../assets/images/Priya Sharma.png';
