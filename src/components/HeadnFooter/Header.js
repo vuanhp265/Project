@@ -75,7 +75,7 @@ function Header() {
             {/* Right Side Actions */}
             <div className="d-flex align-items-center">
               <div className="search-box me-3">
-                
+                {/* <FaSearch className="search-icon" /> */}
                 <input
                   type="text"
                   placeholder="Search..."
