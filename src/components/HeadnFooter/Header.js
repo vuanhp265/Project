@@ -97,7 +97,7 @@ function Header() {
                 <FaUser className="me-1" /> Login
               </Link>
               <Link to="/RegisterPage" className="btn btn-primary">
-                Register Now
+                Register
               </Link>
             </div>
           </div>

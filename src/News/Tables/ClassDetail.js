@@ -37,7 +37,7 @@ function ClassDetail() {
         </div>
       </div>
        <div className="d-grid gap-2 d-md-flex justify-content-md-end p-3">
-       <Link to="/Register" className="btn btn-primary">
+       <Link to="/RegisterPage" className="btn btn-primary">
             Register
         </Link>
         <Link to="/SchedulePage" className="btn btn-danger">
