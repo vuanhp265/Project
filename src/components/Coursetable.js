@@ -47,6 +47,18 @@ function CoursePage() {
       ? orders
       : orders.filter(course => course.name === selectedLevel);
 
+  // Check if all form fields are filled
+  const isFormComplete = () => {
+    return (
+      formData.name.trim() !== "" &&
+      formData.currentLevel !== "" &&
+      formData.targetScore !== "" &&
+      formData.location !== "" &&
+      formData.email.trim() !== "" &&
+      formData.phone.trim() !== ""
+    );
+  };
+
   return (
     <div className="container my-5">
       {/* --- START: Test Form Section --- */}
@@ -82,7 +94,7 @@ function CoursePage() {
               onChange={handleInputChange}
               required
             >
-              <option value="" disabled selected>You are</option>
+              <option value="" disabled>You are</option>
               <option value="Student">Students</option>
               <option value="Working">Working person</option>
             </Form.Select>
@@ -94,12 +106,12 @@ function CoursePage() {
               onChange={handleInputChange}
               required
             >
-              <option value="" disabled selected>Target item point target</option>
+              <option value="" disabled>Target item point target</option>
               <option value="4.0+">4.0+</option>
               <option value="5.0+">5.0+</option>
               <option value="6.0+">6.0+</option>
               <option value="6.5+">6.5+</option>
-              <option value="7.0+">7.0+</option>
+              <option value="7. unidade+">7.0+</option>
               <option value="7.5+">7.5+</option>
             </Form.Select>
           </div>
@@ -110,11 +122,11 @@ function CoursePage() {
               onChange={handleInputChange}
               required
             >
-              <option value="" disabled selected>Choose the facility closest to you</option>
+              <option value="" disabled>Choose the facility closest to you</option>
               <option value="Ha Noi City">Ha Noi City</option>
               <option value="Ho Chi Minh City">Ho Chi Minh City</option>
             </Form.Select>
-        </div>
+          </div>
           <div className="col-md-6">
             <Form.Control
               type="email"
@@ -136,11 +148,16 @@ function CoursePage() {
             />
           </div>
           <div className="col-12">
-            <Button type="submit" size="lg" className="test-button " href='/IELTSProficiencyTest'>
+            <Button
+              type="submit"
+              size="lg"
+              className="test-button"
+              href="/IELTSProficiencyTest"
+              disabled={!isFormComplete()} // Disable button if form is incomplete
+            >
               TEST NOW
             </Button>
           </div>
-
         </Form>
       </div>
       {/* --- END: Test Form Section --- */}
