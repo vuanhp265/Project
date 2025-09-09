@@ -1,0 +1,38 @@
+/* Hero */
+.course-hero {
+background: linear-gradient(135deg, #1f6feb 0%, #7aa2f7 100%);
+color: #fff;
+border-radius: 1rem;
+}
+.course-hero .badge-level {
+background: rgba(255,255,255,0.15);
+border: 1px solid rgba(255,255,255,0.35);
+}
+
+
+/* Sticky CTA card on desktop */
+@media (min-width: 992px) {
+.sticky-cta {
+position: sticky;
+top: 1rem;
+}
+}
+
+
+/* Section cards */
+.section-card {
+border-radius: 1rem;
+}
+
+
+/* Course card hover */
+.course-card {
+transition: transform .15s ease, box-shadow .15s ease;
+}
+.course-card:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(0,0,0,.08); }
+
+
+/* Pills tabs */
+.nav-pills .nav-link.active {
+background-color: #1f6feb;
+}
