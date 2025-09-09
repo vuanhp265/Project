@@ -1,10 +1,10 @@
-.login-container {
+.register-container {
     background-color: #f8f9fa; /* Màu trắng nhạt */
     border: 1px solid #dee2e6; /* Đường viền nhạt */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 30px;
-    width: 400px;
+    width: 450px; /* Rộng hơn một chút để chứa thêm trường */
     max-width: 90%;
     margin: 50px auto;
     text-align: center;
@@ -28,6 +28,7 @@
   }
   
   input[type='text'],
+  input[type='email'],
   input[type='password'] {
     width: calc(100% - 22px);
     padding: 10px;
@@ -38,6 +39,7 @@
   }
   
   input[type='text']:focus,
+  input[type='email']:focus,
   input[type='password']:focus {
     border-color: #007bff; /* Viền xanh dương khi focus */
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Hiệu ứng bóng khi focus */
@@ -50,8 +52,8 @@
     font-size: 0.9em;
   }
   
-  .login-button {
-    background-color: #007bff; /* Màu xanh dương chủ đạo */
+  .register-button {
+    background-color: #007bff; /* Màu xanh lá cây tươi sáng hơn cho đăng ký */
     color: white;
     padding: 12px 20px;
     border: none;
@@ -62,25 +64,22 @@
     width: 100%;
   }
   
-  .login-button:hover {
-    background-color: #0056b3; /* Màu xanh dương đậm hơn khi hover */
+  .register-button:hover {
+    background-color: #008cff; /* Màu xanh lá cây đậm hơn khi hover */
   }
   
-  .signup-link,
-  .forgot-password {
+  .login-link {
     margin-top: 15px;
     font-size: 0.95em;
     color: #6c757d; /* Màu xám nhạt hơn */
   }
   
-  .signup-link a,
-  .forgot-password a {
+  .login-link a {
     color: #007bff;
     text-decoration: none;
     font-weight: bold;
   }
   
-  .signup-link a:hover,
-  .forgot-password a:hover {
+  .login-link a:hover {
     text-decoration: underline;
   }

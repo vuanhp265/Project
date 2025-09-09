@@ -113,9 +113,9 @@
   .successMessage {
     background-color: #e3f2fd; /* Màu xanh dương nhạt (Light Blue shade) */
     color: #1e88e5; /* Màu xanh dương đậm hơn một chút cho chữ */
-    padding: 25px 40px;
-    border-radius: 10px;
-    font-size: 1.6em;
+    padding: 12px 20px; /* Giảm padding */
+    border-radius: 8px; /* Giảm border-radius */
+    font-size: 1em; /* Giảm font-size */
     font-weight: bold;
     text-align: center;
     display: flex;
@@ -123,8 +123,50 @@
     justify-content: center;
     animation-duration: 0.4s;
     animation-fill-mode: both;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Giảm box-shadow */
     border: 1px solid #bbdefb; /* Thêm một đường viền nhạt hơn */
+  }
+  
+  .successIcon {
+    margin-right: 8px; /* Giảm margin-right */
+    font-size: 0.9em; /* Giảm font-size của icon */
+    color: #1e88e5; /* Màu xanh dương cho icon */
+  }
+  
+  /* Hiệu ứng Scale In */
+  .animateScaleIn {
+    animation-name: scaleIn;
+  }
+  
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Hiệu ứng Scale Out */
+  .animateScaleOut {
+    animation-name: scaleOut;
+  }
+  
+  @keyframes scaleOut {
+    from {
+      opacity: 1;
+      transform: scale(1);
+    }
+    to {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+  }
+  
+  .successMessage {
+    animation-name: scaleIn; /* Áp dụng hiệu ứng scaleIn khi hiển thị */
   }
   
   .successIcon {

@@ -145,10 +145,10 @@ footer p {
   
   .search-box {
     margin: 1rem 0;
-    width: 100%;
+    width: 150%;
   }
   .search-box input {
-    width: 100% !important;
+    width: 150% !important;
   }
   
   .nav-item {
@@ -315,7 +315,9 @@ body.dark-mode {
   align-items: center;
   font-weight: bold;
   transform: rotate(-15deg);
-  font-size: 18px;
+  /* Reduce font size to fit */
+  font-size: 14px;
+  text-align: center; /* Ensure text is centered within the circle */
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   transition: transform 0.3s ease;

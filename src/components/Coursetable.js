@@ -90,7 +90,6 @@ export default function CourseTable() {
               <br /> START?
             </div>
           </div>
-
           {/* 2 nút đi thẳng sang trang form */}
           <div className="w-100">
             <Row className="g-2 mt-3">

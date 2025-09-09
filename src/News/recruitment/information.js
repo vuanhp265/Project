@@ -24,7 +24,7 @@ function Information() {
       <section className="container my-5">
         <div className="row align-items-center">
           <div className="col-md-6 text-center">
-            <h2 className="mb-4 text-primary ">About Us</h2>
+            <h2 className="mb-4 text-primary ">ABOUT US</h2>
             <p >
             The working environment at Bee is dynamic, youthful and inspiring, that is what you can say about Bee. Let your talent and youth shine at IELTS English, and bring positive values ​​to foreign language learning for the young generation of Vietnam!
             </p>

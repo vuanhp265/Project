@@ -1,57 +1,72 @@
 /* Popup overlay */
 .popup-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Popup box */
+.exact-success-popup {
+  background-color: #e3f2fd; 
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+/* Success icon */
+.exact-success-icon {
+  color: #2196f3; /* Màu xanh dương của icon */
+  font-size: 1.5rem;
+  margin-right: 0.75rem;
+  vertical-align: middle; /* Căn giữa theo chiều dọc */
+}
+
+/* Success message */
+.exact-success-message {
+  color: #2196f3; /* Màu xanh dương của chữ */
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0;
+  vertical-align: middle; /* Căn giữa theo chiều dọc */
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
   }
-  
-  /* Popup box */
-  .popup-box {
-    background-color: #ffffff;
-    padding: 30px 40px;
-    border-radius: 12px;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
-    max-width: 400px;
-    width: 90%;
-    animation: fadeIn 0.3s ease-in-out;
-    text-align: center;
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
-  
-  /* Success message */
-  .success-message {
-    color: #3441b7; 
-    font-weight: 600;
-    font-size: 1.25rem;
-    animation: fadeInText 0.5s ease-in-out;
+}
+
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+    transform: translateY(-3px);
   }
-  
-  /* Animations */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: scale(0.9);
-    }
-    to {
-      opacity: 1;
-      transform: scale(1);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  @keyframes fadeInText {
-    from {
-      opacity: 0;
-      transform: translateY(-5px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
+}
+
+.exact-success-popup {
+  animation: fadeIn 0.4s ease-out; /* Chậm hơn và dùng ease-out */
+}
+
+.exact-success-message {
+  animation: fadeInText 0.5s ease-out; /* Chậm hơn và dùng ease-out */
+}

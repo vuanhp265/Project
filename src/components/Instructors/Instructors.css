@@ -1,0 +1,136 @@
+.instructors-container {
+    max-width: 1200px; /* Tăng kích thước container */
+    margin: 60px auto; /* Tăng margin trên dưới */
+    padding: 50px; /* Tăng padding */
+    font-family: 'Nunito', sans-serif; /* Phông chữ hiện đại hơn */
+    color: #333;
+    background-color: #f8f9fa; /* Màu nền nhạt */
+    border-radius: 15px; /* Góc bo tròn hơn */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05); /* Bóng đổ nhẹ nhàng hơn */
+  }
+  
+  .instructors-title {
+    font-size: 3.5em; /* Tiêu đề lớn và nổi bật */
+    color: #3498db; /* Màu xanh dương tươi sáng */
+    text-align: center;
+    margin-bottom: 50px; /* Tăng khoảng cách dưới tiêu đề */
+    font-weight: 700; /* Chữ đậm hơn */
+  }
+  
+  .instructors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Kích thước minmax lớn hơn */
+    gap: 40px; /* Khoảng cách giữa các card lớn hơn */
+  }
+  
+  .instructor-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Bóng đổ tinh tế */
+    padding: 35px; /* Padding bên trong lớn hơn */
+    text-align: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .instructor-card:hover {
+    transform: translateY(-10px); /* Hiệu ứng nâng lên rõ rệt hơn */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12); /* Bóng đổ đậm hơn khi hover */
+  }
+  
+  .instructor-image {
+    width: 160px; /* Ảnh lớn hơn */
+    height: 160px; /* Ảnh lớn hơn */
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 25px; /* Khoảng cách dưới ảnh lớn hơn */
+    border: 5px solid #e1f5fe; /* Viền ảnh màu nhạt hơn */
+  }
+  
+  .instructor-name {
+    font-size: 2.0em; /* Tên lớn hơn */
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-weight: 600; /* Chữ đậm vừa */
+  }
+  
+  .instructor-expertise {
+    color: #777;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .instructor-info {
+    text-align: left;
+    width: 100%;
+    margin-top: 20px; /* Thêm khoảng cách phía trên phần info */
+  }
+  
+  .instructor-bio {
+    font-size: 1.05em;
+    line-height: 1.8; /* Khoảng cách dòng tốt hơn */
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .read-more-btn {
+    background: none;
+    border: none;
+    color: #3498db; /* Màu nút xem thêm */
+    cursor: pointer;
+    padding: 0;
+    font-size: 1.0em;
+    font-weight: 500;
+  }
+  
+  .read-more-btn:hover {
+    text-decoration: underline;
+  }
+  
+  .instructor-courses {
+    font-size: 1.0em;
+    color: #888;
+    margin-bottom: 15px;
+  }
+  
+  .instructor-reviews {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #f0f8ff; /* Màu nền nhạt cho review */
+    border-radius: 10px;
+    text-align: left;
+    border: 1px solid #e0f2f7; /* Viền nhẹ cho review */
+  }
+  
+  .reviews-title {
+    font-size: 1.3em;
+    color: #333;
+    margin-bottom: 12px;
+    font-weight: 600;
+  }
+  
+  .instructor-reviews ul {
+    padding-left: 25px;
+    list-style-type: disc;
+    font-size: 1.0em;
+    color: #666;
+  }
+  
+  /* CSS để căn giữa giáo viên thứ ba */
+  .instructors-grid > div:nth-child(3) {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .instructors-grid > div:nth-child(3) .instructor-card {
+    max-width: 600px; /* Tăng kích thước card giữa */
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    flex-direction: column; /* Đảm bảo các phần tử con xếp theo cột */
+  }
+  
+  .instructors-grid > div:nth-child(3) .instructor-info {
+    text-align: left; /* Trả lại căn trái cho thông tin */
+    width: 100%;
+  }

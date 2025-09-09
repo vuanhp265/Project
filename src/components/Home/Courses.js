@@ -44,8 +44,8 @@ function Home() {
               </option>
             ))}
           </select>
-        </div>
-        <div className="row">
+        </div> */}
+        {/* <div className="row">
           {filteredCourses.map((course) => (
             <div key={course.id} className="col-md-4 mb-4">
               <div className="card">

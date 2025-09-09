@@ -8,18 +8,18 @@ import emily_brown from '../../assets/images/emily_brown.webp';
 const Faculty = () => {
   const teachers = [
     {
-      name: 'John Doe',
-      title: 'IELTS Expert',
+      name: 'Dr. Emily Carter',
+      title: 'IELTS Reading & Writing Specialist',
       image: john_doe, // Use the imported image
     },
     {
-      name: 'Jane Smith',
-      title: 'Language Coach',
+      name: 'Mr. James Miller',
+      title: 'IELTS Listening & Speaking Exper',
       image: jane_smith, // Placeholder (unchanged)
     },
     {
-      name: 'Emily Brown',
-      title: 'Career Mentor',
+      name: 'Ms. Sophia Lee',
+      title: 'Overall IELTS Strategy & Techniques',
       image: emily_brown, // Fallback placeholder
     },
   ];

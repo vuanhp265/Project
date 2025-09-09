@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Register.css"; // Import CSS riêng
+import { FaCheckCircle } from 'react-icons/fa';
 
 function Register() {
   const [showSuccess, setShowSuccess] = useState(false);
@@ -17,6 +18,7 @@ function Register() {
 
   return (
     <div className="container my-5">
+      {/* ... (phần header và form giữ nguyên) ... */}
       <header
         className="text-white text-center d-flex flex-column justify-content-center align-items-center rounded-1"
         style={{
@@ -62,7 +64,7 @@ function Register() {
             <input
               type="tel"
               className="form-control"
-              placeholder="Enter your phone number"
+              placeholder="Enter your address"
             />
           </div>
           <div className="col-md-4">
@@ -70,7 +72,8 @@ function Register() {
             <input
               type="text"
               className="form-control"
-              placeholder="Enter your address"
+              placeholder="Enter your phone number"
+
             />
           </div>
         </div>
@@ -97,8 +100,9 @@ function Register() {
       {/* Success popup */}
       {showSuccess && (
         <div className="popup-overlay">
-          <div className="popup-box">
-            <h2 className="success-message">Successfully!</h2>
+          <div className="popup-box exact-success-popup">
+            <FaCheckCircle className="exact-success-icon" />
+            <h2 className="exact-success-message">Sent successfully!</h2>
           </div>
         </div>
       )}

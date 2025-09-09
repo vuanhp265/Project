@@ -1,7 +1,7 @@
 // src/components/Home/WhyChooseUs.js
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import './WhyChooseUs.css';
+import '../Home/WhyChooseUs.css';
 
 const WhyChooseUs = () => {
   const benefits = [
