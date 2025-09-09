@@ -69,6 +69,18 @@ export default function CourseTable() {
     return list.slice().sort(sorters[sortKey] || sorters.nameAsc);
   }, [selectedLevel, query, sortKey]);
 
+  // Check if all form fields are filled
+  const isFormComplete = () => {
+    return (
+      formData.name.trim() !== "" &&
+      formData.currentLevel !== "" &&
+      formData.targetScore !== "" &&
+      formData.location !== "" &&
+      formData.email.trim() !== "" &&
+      formData.phone.trim() !== ""
+    );
+  };
+
   return (
     <div className="container my-5">
       {/* ===== HERO / TEST FORM (giữ, hoặc bỏ nếu không cần) ===== */}
@@ -150,7 +162,6 @@ export default function CourseTable() {
               <option value="levelAsc">Level A→Z</option>
               <option value="durationAsc">Duration ↑</option>
             </Form.Select>
-
             <Form.Control
               style={{ minWidth: 220 }}
               type="search"
