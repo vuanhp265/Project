@@ -59,8 +59,8 @@ function Home() {
               </div>
             </div>
           ))}
-        </div>
-        <div className="mt-4">
+        </div> */}
+        {/* <div className="mt-4">
           <a href="/data/price-list.pdf" className="btn btn-success" download>
             Download Price List
           </a>
