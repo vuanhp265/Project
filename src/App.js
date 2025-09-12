@@ -6,8 +6,6 @@ import Recruitment from './News/recruitment/information details';
 import Register from './News/recruitment/Register';
 import ClassDetail from '../src/News/Tables/ClassDetail';
 import ClassDetailone from '../src/News/Tables/ClassDetailone';
-import Level0Table from '../src/News/Tables/Level0Table';
-import Level1Table from '../src/News/Tables/Level1Table';
 import CourseTable from './components/Coursetable';
 import AboutUs from './components/AboutUs';
 import Header from './components/HeadnFooter/Header';
@@ -41,8 +39,8 @@ function Appone() {
           <Routes>
             <Route path="/" element={
               <>
-                <Level0Table />
-                <Level1Table />
+                {/* <Level0Table />
+                <Level1Table /> */}
               </>
             } />
             <Route path="/" element={<Home />} />
