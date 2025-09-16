@@ -26,7 +26,6 @@ export default function CourseTable() {
   const [sortKey, setSortKey] = useState("nameAsc");
 
   // ---- Derived data ----
-  // Ở dữ liệu mẫu của bạn trước đây, filter theo "name". Nếu muốn theo "level", đổi map(...) sang c.level.
   const levels = useMemo(
     () => ["All", ...Array.from(new Set((orders || []).map((c) => c?.name).filter(Boolean)))],
     []
@@ -69,21 +68,9 @@ export default function CourseTable() {
     return list.slice().sort(sorters[sortKey] || sorters.nameAsc);
   }, [selectedLevel, query, sortKey]);
 
-  // Check if all form fields are filled
-  const isFormComplete = () => {
-    return (
-      formData.name.trim() !== "" &&
-      formData.currentLevel !== "" &&
-      formData.targetScore !== "" &&
-      formData.location !== "" &&
-      formData.email.trim() !== "" &&
-      formData.phone.trim() !== ""
-    );
-  };
-
   return (
     <div className="container my-5">
-      {/* ===== HERO / TEST FORM (giữ, hoặc bỏ nếu không cần) ===== */}
+      {/* ===== HERO ===== */}
       <section className="position-relative overflow-hidden rounded-4 p-4 p-md-5 text-white hero-gradient shadow-sm">
         <div className="d-flex flex-column flex-lg-row align-items-center gap-4">
           <div className="text-center text-lg-start flex-fill">
@@ -102,7 +89,7 @@ export default function CourseTable() {
               <br /> START?
             </div>
           </div>
-          {/* 2 nút đi thẳng sang trang form */}
+
           <div className="w-100">
             <Row className="g-2 mt-3">
               <Col md={6}>
@@ -111,7 +98,7 @@ export default function CourseTable() {
                   className="w-100 fw-semibold shadow-sm cta-btn"
                   onClick={() => navigate("/enroll?type=advice")}
                 >
-                  Nhận tư vấn lộ trình
+                  Get route advice
                 </Button>
               </Col>
               <Col md={6}>
@@ -121,7 +108,7 @@ export default function CourseTable() {
                   className="w-100 fw-semibold shadow-sm"
                   onClick={() => navigate("/enroll?type=test")}
                 >
-                  Test đầu vào miễn phí
+                  Free input test
                 </Button>
               </Col>
             </Row>
@@ -143,7 +130,6 @@ export default function CourseTable() {
                 style={{ minWidth: 180 }}
                 value={selectedLevel}
                 onChange={(e) => setSelectedLevel(e.target.value)}
-                aria-label="Filter by level"
               >
                 {levels.map((level, idx) => (
                   <option key={idx} value={level}>{level}</option>
@@ -155,7 +141,6 @@ export default function CourseTable() {
               style={{ minWidth: 160 }}
               value={sortKey}
               onChange={(e) => setSortKey(e.target.value)}
-              aria-label="Sort courses"
             >
               <option value="nameAsc">Name A→Z</option>
               <option value="nameDesc">Name Z→A</option>
@@ -168,16 +153,15 @@ export default function CourseTable() {
               placeholder="Search by name, target, ..."
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              aria-label="Search courses"
             />
           </div>
         </div>
 
+        {/* ===== COURSE LIST ===== */}
         <Row>
           {filteredCourses.map((item) => (
             <Col md={6} lg={4} className="mb-4" key={item?.id ?? item?.name}>
               <Card className="h-100 shadow-sm course-card position-relative overflow-hidden">
-                {/* Media */}
                 <div className="media-wrap position-relative">
                   <img
                     src={item?.image || "/images/course-placeholder.jpg"}
@@ -185,7 +169,6 @@ export default function CourseTable() {
                     className="w-100 object-fit-cover"
                     style={{ aspectRatio: "16 / 9" }}
                   />
-                  {/* Corner pill (top-right) for aiming/current level */}
                   <div className="corner-pill">
                     {item?.target ? (
                       <>Aiming&nbsp;<strong>{item.target}</strong></>
@@ -195,7 +178,6 @@ export default function CourseTable() {
                       <>Level&nbsp;<strong>N/A</strong></>
                     )}
                   </div>
-                  {/* Overlay headline at bottom of image */}
                   <div className="card-hero-overlay">
                     <div className="d-flex align-items-center gap-2 mb-1">
                       {item?.level && (
@@ -238,7 +220,7 @@ export default function CourseTable() {
                           )
                         }
                       >
-                        Đăng ký ngay
+                        Register
                       </Button>
                       <Button
                         size="md"
@@ -249,10 +231,10 @@ export default function CourseTable() {
                           )
                         }
                       >
-                        Test đầu vào
+                        Input test
                       </Button>
                       <Button size="md" variant="outline-primary" onClick={() => handleShowModal(item)}>
-                        Chi tiết
+                        Details
                       </Button>
                     </div>
                   </div>
@@ -266,7 +248,7 @@ export default function CourseTable() {
           )}
         </Row>
 
-        {/* ===== Course Detail Modal (xem nhanh) ===== */}
+        {/* ===== Modal ===== */}
         <Modal show={showModal} onHide={handleCloseModal} centered>
           <Modal.Header closeButton>
             <Modal.Title>{selectedCourse?.name}</Modal.Title>
@@ -302,13 +284,13 @@ export default function CourseTable() {
                 );
               }}
             >
-              Đăng ký khóa học
+              Register for the course
             </Button>
           </Modal.Footer>
         </Modal>
       </section>
 
-      {/* Styles (gộp vào 1 <style> duy nhất để tránh lỗi template) */}
+      {/* Styles */}
       <style>{`
         .hero-gradient {
           background:
